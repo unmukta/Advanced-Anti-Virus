@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLP Enterprise 3.0 Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>DLP Enterprise 3.0 Dashboard</h1>
+        
+        <div class="status-section">
+            <h2>System Status</h2>
+            <div id="status-container">
+                <p>Loading status...</p>
+            </div>
+        </div>
+        
+        <div class="actions-section">
+            <h2>Actions</h2>
+            <button class="scan-button" onclick="startScan()">Start System Scan</button>
+            <button class="scan-button" onclick="checkNetwork()">Check Network</button>
+            <button class="scan-button" onclick="viewAuditLog()">View Audit Log</button>
+        </div>
+        
+        <div class="results-section">
+            <h2>Scan Results</h2>
+            <div id="results-container"></div>
+        </div>
+    </div>
+
+    <script>
+        // Fetch system status on page load
+        fetch('/api/status')
+            .then(response => response.json())
+            .then(data => {
+                let statusHtml = '';
+                data.components.forEach(component => {
+                    statusHtml += <div class="status-card">
+                        <strong>:</strong> 
+                        <span class="status-">
+                            
+                        </span>
+                    </div>;
+                });
+                document.getElementById('status-container').innerHTML = statusHtml;
+            });
+
+        function startScan() {
+            fetch('/api/scan')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('results-container').innerHTML = 
+                        <div class="status-card">Scan initiated: </div>;
+                });
+        }
+
+        function checkNetwork() {
+            fetch('/api/network/scan')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('results-container').innerHTML = 
+                        <div class="status-card">Network scan initiated: </div>;
+                });
+        }
+
+        function viewAuditLog() {
+            document.getElementById('results-container').innerHTML = 
+                '<div class="status-card">Audit log functionality coming soon...</div>';
+        }
+    </script>
+</body>
+</html>

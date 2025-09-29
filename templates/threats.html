@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLP Enterprise 3.0 - THREATS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .navbar { background: linear-gradient(135deg, #2c3e50, #34495e); }
+        .card { border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        .card-header { background: linear-gradient(135deg, #34495e, #2c3e50); color: white; border-radius: 10px 10px 0 0 !important; }
+        .status-badge { padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
+        .status-active { background-color: #2ecc71; color: white; }
+        .status-warning { background-color: #f39c12; color: white; }
+        .status-danger { background-color: #e74c3c; color: white; }
+        .real-time-log { height: 300px; overflow-y: auto; background-color: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; }
+        .log-entry { margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #4a6572; }
+        .log-time { color: #3498db; font-weight: bold; }
+        .log-info { color: #2ecc71; }
+        .log-warning { color: #f39c12; }
+        .log-danger { color: #e74c3c; }
+        .severity-critical { background-color: #e74c3c; color: white; }
+        .severity-high { background-color: #f39c12; color: white; }
+        .severity-medium { background-color: #f1c40f; color: white; }
+        .severity-low { background-color: #3498db; color: white; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/overview">
+                <i class="fas fa-shield-alt me-2"></i>DLP Enterprise 3.0
+            </a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="/overview"><i class="fas fa-tachometer-alt me-1"></i> Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/network"><i class="fas fa-network-wired me-1"></i> Network</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/system"><i class="fas fa-desktop me-1"></i> System</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/threats"><i class="fas fa-virus me-1"></i> Threats</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/audit"><i class="fas fa-clipboard-list me-1"></i> Audit Log</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <h1>DLP Enterprise 3.0 - THREATS</h1>
+        
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-virus me-2"></i> Threat Detection</span>
+                        <span class="badge bg-danger" id="threat-count">0 Threats</span>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover" id="threats-table">
+                                <thead>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Type</th>
+                                        <th>Severity</th>
+                                        <th>Source</th>
+                                        <th>Target</th>
+                                        <th>Description</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="7" class="text-center">No threats detected</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <i class="fas fa-clipboard-list me-2"></i> Threat Details
+                    </div>
+                    <div class="card-body">
+                        <div id="threat-details" class="p-3 bg-light rounded">
+                            <p class="text-center">Select a threat to view details</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <i class="fas fa-chart-pie me-2"></i> Threat Distribution
+                    </div>
+                    <div class="card-body">
+                        <canvas id="threat-chart" height="250"></canvas>
+                    </div>
+                </div>
+                
+                <div class="card mt-4">
+                    <div class="card-header">
+                        <i class="fas fa-history me-2"></i> Recent Threat Alerts
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="real-time-log" id="threat-alerts">
+                            <div class="log-entry"><span class="log-time">[00:00:00]</span> <span class="log-info">Threat monitoring initialized</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Threat data
+        const threatTypes = ['Malware', 'Phishing', 'DDoS', 'Brute Force', 'Data Exfiltration', 'Unauthorized Access', 'Ransomware'];
+        const severityLevels = ['Low', 'Medium', 'High', 'Critical'];
+        const sources = ['External', 'Internal', 'Unknown'];
+        const targets = ['File Server', 'Database', 'Web Server', 'Workstation', 'Network Device'];
+        const actions = ['Blocked', 'Quarantined', 'Alerted', 'Investigating', 'Resolved'];
+        
+        let threatChart;
+        let threats = [];
+        
+        function initializeThreatChart() {
+            const ctx = document.getElementById('threat-chart').getContext('2d');
+            threatChart = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: threatTypes,
+                    datasets: [{
+                        data: Array(threatTypes.length).fill(0),
+                        backgroundColor: [
+                            '#e74c3c', '#f39c12', '#f1c40f', '#3498db', 
+                            '#9b59b6', '#1abc9c', '#2ecc71'
+                        ]
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Threat Distribution'
+                        },
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        }
+        
+        function simulateThreat() {
+            // Only simulate a new threat occasionally
+            if (Math.random() < 0.7) return;
+            
+            const now = new Date();
+            const threatType = threatTypes[Math.floor(Math.random() * threatTypes.length)];
+            const severity = severityLevels[Math.floor(Math.random() * severityLevels.length)];
+            
+            const threat = {
+                id: 'threat-' + Date.now(),
+                timestamp: now.toLocaleTimeString(),
+                type: threatType,
+                severity: severity,
+                source: sources[Math.floor(Math.random() * sources.length)],
+                target: targets[Math.floor(Math.random() * targets.length)],
+                description: \\ attempt detected on \\,
+                action: actions[Math.floor(Math.random() * actions.length)],
+                details: \Detailed analysis of the \ threat. This type of attack typically involves [description]. Recommended actions: [steps to mitigate].\
+            };
+            
+            threats.unshift(threat);
+            updateThreatTable();
+            updateThreatChart();
+            addThreatAlert(threat);
+            updateThreatCount();
+        }
+        
+        function updateThreatTable() {
+            const tableBody = document.getElementById('threats-table').querySelector('tbody');
+            tableBody.innerHTML = '';
+            
+            if (threats.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="7" class="text-center">No threats detected</td></tr>';
+                return;
+            }
+            
+            threats.slice(0, 10).forEach(threat => {
+                const row = document.createElement('tr');
+                row.innerHTML = \
+                    <td>\</td>
+                    <td>\</td>
+                    <td><span class="badge severity-\">\</span></td>
+                    <td>\</td>
+                    <td>\</td>
+                    <td>\</td>
+                    <td><span class="badge \">\</span></td>
+                \;
+                
+                // Add click event to show details
+                row.addEventListener('click', () => showThreatDetails(threat));
+                row.style.cursor = 'pointer';
+                
+                tableBody.appendChild(row);
+            });
+        }
+        
+        function showThreatDetails(threat) {
+            const detailsContainer = document.getElementById('threat-details');
+            detailsContainer.innerHTML = \
+                <h4>\ Threat</h4>
+                <p><strong>Time:</strong> \</p>
+                <p><strong>Severity:</strong> <span class="badge severity-\">\</span></p>
+                <p><strong>Source:</strong> \</p>
+                <p><strong>Target:</strong> \</p>
+                <p><strong>Status:</strong> <span class="badge \">\</span></p>
+                <hr>
+                <p><strong>Description:</strong> \</p>
+                <p><strong>Details:</strong> \</p>
+                <hr>
+                <h5>Recommended Actions:</h5>
+                <ul>
+                    <li>Isolate affected systems if necessary</li>
+                    <li>Review firewall rules for suspicious activity</li>
+                    <li>Scan for malware and other threats</li>
+                    <li>Update security signatures</li>
+                    <li>Notify security team</li>
+                </ul>
+            \;
+        }
+        
+        function updateThreatChart() {
+            if (!threatChart) return;
+            
+            // Count threats by type
+            const threatCounts = {};
+            threatTypes.forEach(type => {
+                threatCounts[type] = threats.filter(t => t.type === type).length;
+            });
+            
+            // Update chart data
+            threatChart.data.datasets[0].data = threatTypes.map(type => threatCounts[type]);
+            threatChart.update();
+        }
+        
+        function addThreatAlert(threat) {
+            const logElement = document.getElementById('threat-alerts');
+            const time = new Date().toLocaleTimeString();
+            const logEntry = document.createElement('div');
+            logEntry.className = 'log-entry';
+            logEntry.innerHTML = \<span class="log-time">[\]</span> <span class="log-\">\ threat detected: \</span>\;
+            
+            logElement.prepend(logEntry);
+            
+            // Keep only the last 20 entries
+            if (logElement.children.length > 20) {
+                logElement.removeChild(logElement.lastChild);
+            }
+        }
+        
+        function updateThreatCount() {
+            document.getElementById('threat-count').textContent = \\ Threats\;
+        }
+        
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Threats page initialized');
+            initializeThreatChart();
+            
+            // Simulate occasional threats
+            setInterval(simulateThreat, 5000);
+            
+            // Add initial alert
+            addThreatAlert({
+                type: 'System',
+                severity: 'Info',
+                description: 'Threat monitoring system initialized'
+            });
+        });
+    </script>
+</body>
+</html>

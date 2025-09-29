@@ -1,0 +1,1518 @@
+DLP Enterprise Audit Log - Started at 2025-09-10T23:55:08.130434
+================================================================================
+
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::135",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1796,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49668",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 5572,
+  "process_name": "spoolsv.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:1900",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11924,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5050",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 10856,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "::1:55799",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11924,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::445",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 4,
+  "process_name": "System"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49665",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1356,
+  "process_name": "wininit.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:138",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 4,
+  "process_name": "System"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64110",
+  "remote_address": "23.9.220.6:80",
+  "status": "ESTABLISHED",
+  "pid": 8120,
+  "process_name": "WhatsApp.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:49667",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 5932,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64112",
+  "remote_address": "129.227.206.6:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64105",
+  "remote_address": "157.240.237.60:443",
+  "status": "CLOSE_WAIT",
+  "pid": 8120,
+  "process_name": "WhatsApp.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:137",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 4,
+  "process_name": "System"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64109",
+  "remote_address": "57.144.125.32:443",
+  "status": "CLOSE_WAIT",
+  "pid": 8120,
+  "process_name": "WhatsApp.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49664",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1528,
+  "process_name": "lsass.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64102",
+  "remote_address": "157.240.16.52:443",
+  "status": "CLOSE_WAIT",
+  "pid": 8120,
+  "process_name": "WhatsApp.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49668",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 5572,
+  "process_name": "spoolsv.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:64118",
+  "remote_address": "127.0.0.1:64119",
+  "status": "ESTABLISHED",
+  "pid": 11344,
+  "process_name": "python.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5040",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 10856,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49667",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 3576,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64117",
+  "remote_address": "142.250.76.195:80",
+  "status": "ESTABLISHED",
+  "pid": 4308,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:50524",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 4256,
+  "process_name": "NVIDIA Overlay.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64048",
+  "remote_address": "18.97.36.63:443",
+  "status": "ESTABLISHED",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:49434",
+  "remote_address": "4.213.25.242:443",
+  "status": "ESTABLISHED",
+  "pid": 6196,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64091",
+  "remote_address": "129.227.206.5:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2025-09-10 23:55:08] SYSTEM: {
+  "event": "audit_logger_started",
+  "hostname": "LAPTOP-U0SSEUSV",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "timestamp": "2025-09-10T23:55:08.248782"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49664",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1528,
+  "process_name": "lsass.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64103",
+  "remote_address": "163.70.143.60:443",
+  "status": "CLOSE_WAIT",
+  "pid": 8120,
+  "process_name": "WhatsApp.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64114",
+  "remote_address": "129.227.206.6:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:135",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1796,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64106",
+  "remote_address": "163.70.144.60:443",
+  "status": "CLOSE_WAIT",
+  "pid": 8120,
+  "process_name": "WhatsApp.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 19348,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64115",
+  "remote_address": "129.227.206.5:443",
+  "status": "ESTABLISHED",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64116",
+  "remote_address": "129.227.206.5:443",
+  "status": "CLOSE_WAIT",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5355",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2552,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:8000",
+  "remote_address": "127.0.0.1:64092",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:64119",
+  "remote_address": "127.0.0.1:64118",
+  "status": "ESTABLISHED",
+  "pid": 11344,
+  "process_name": "python.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:64903",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 4256,
+  "process_name": "NVIDIA Overlay.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "::1:5432",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 7932,
+  "process_name": "postgres.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64107",
+  "remote_address": "57.144.125.32:443",
+  "status": "CLOSE_WAIT",
+  "pid": 8120,
+  "process_name": "WhatsApp.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:10030",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 16040,
+  "process_name": "NVIDIA Overlay.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49671",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1500,
+  "process_name": "services.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:64089",
+  "remote_address": "127.0.0.1:64090",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:139",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 4,
+  "process_name": "System"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:55800",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11924,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:445",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 4,
+  "process_name": "System"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64093",
+  "remote_address": "104.18.27.90:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49666",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 2244,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64101",
+  "remote_address": "57.144.125.33:80",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:55801",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11924,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64111",
+  "remote_address": "104.18.27.90:443",
+  "status": "ESTABLISHED",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64113",
+  "remote_address": "115.111.76.25:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:8000",
+  "remote_address": "127.0.0.1:64099",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64108",
+  "remote_address": "157.240.242.60:443",
+  "status": "CLOSE_WAIT",
+  "pid": 8120,
+  "process_name": "WhatsApp.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5432",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 7932,
+  "process_name": "postgres.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:63352",
+  "remote_address": "40.74.79.222:443",
+  "status": "ESTABLISHED",
+  "pid": 19356,
+  "process_name": "StartMenuExperienceHost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64104",
+  "remote_address": "57.144.177.32:443",
+  "status": "CLOSE_WAIT",
+  "pid": 8120,
+  "process_name": "WhatsApp.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:1900",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11924,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49666",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 2244,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2552,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64098",
+  "remote_address": "162.159.192.1:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49665",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1356,
+  "process_name": "wininit.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64094",
+  "remote_address": "115.111.76.28:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49667",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 3576,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:51566",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 15720,
+  "process_name": "nvcontainer.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49671",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1500,
+  "process_name": "services.exe"
+}
+[2025-09-10 23:55:08] NETWORK: {
+  "action": "connection_established",
+  "local_address": "::1:1900",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11924,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:08] SYSTEM: {
+  "cpu_percent": 0.0,
+  "memory_percent": 84.9,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:11] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:8000",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 11152,
+  "process_name": "python.exe"
+}
+[2025-09-10 23:55:11] SYSTEM: {
+  "cpu_percent": 5.5,
+  "memory_percent": 85.0,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:14] SYSTEM: {
+  "cpu_percent": 22.5,
+  "memory_percent": 83.3,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:17] PROCESS: {
+  "action": "started",
+  "pid": 14504,
+  "name": "brave.exe",
+  "username": "LAPTOP-U0SSEUSV\\Ankit"
+}
+[2025-09-10 23:55:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:64378",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2552,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::64378",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2552,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:55:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:8000",
+  "remote_address": "127.0.0.1:64120",
+  "status": "ESTABLISHED",
+  "pid": 11152,
+  "process_name": "python.exe"
+}
+[2025-09-10 23:55:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:64120",
+  "remote_address": "127.0.0.1:8000",
+  "status": "ESTABLISHED",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:55:17] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64116-129.227.206.5:443"
+}
+[2025-09-10 23:55:17] SYSTEM: {
+  "cpu_percent": 14.6,
+  "memory_percent": 83.5,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:8000-127.0.0.1:64092"
+}
+[2025-09-10 23:55:20] SYSTEM: {
+  "cpu_percent": 9.6,
+  "memory_percent": 83.5,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:23] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:64121",
+  "remote_address": "127.0.0.1:8000",
+  "status": "ESTABLISHED",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:55:23] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:8000",
+  "remote_address": "127.0.0.1:64121",
+  "status": "ESTABLISHED",
+  "pid": 11152,
+  "process_name": "python.exe"
+}
+[2025-09-10 23:55:23] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:64120-127.0.0.1:8000"
+}
+[2025-09-10 23:55:23] SYSTEM: {
+  "cpu_percent": 9.0,
+  "memory_percent": 83.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:26] PROCESS: {
+  "action": "terminated",
+  "pid": 10244
+}
+[2025-09-10 23:55:26] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:64903"
+}
+[2025-09-10 23:55:26] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:50524"
+}
+[2025-09-10 23:55:26] SYSTEM: {
+  "cpu_percent": 7.4,
+  "memory_percent": 83.7,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:29] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:8000-127.0.0.1:64099"
+}
+[2025-09-10 23:55:29] SYSTEM: {
+  "cpu_percent": 5.2,
+  "memory_percent": 83.7,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:32] SYSTEM: {
+  "cpu_percent": 4.4,
+  "memory_percent": 83.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:36] SYSTEM: {
+  "cpu_percent": 8.2,
+  "memory_percent": 83.7,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:39] SYSTEM: {
+  "cpu_percent": 4.2,
+  "memory_percent": 83.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:42] SYSTEM: {
+  "cpu_percent": 7.3,
+  "memory_percent": 83.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:45] SYSTEM: {
+  "cpu_percent": 7.9,
+  "memory_percent": 83.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:48] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64093-104.18.27.90:443"
+}
+[2025-09-10 23:55:48] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64094-115.111.76.28:443"
+}
+[2025-09-10 23:55:48] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64091-129.227.206.5:443"
+}
+[2025-09-10 23:55:48] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:64121-127.0.0.1:8000"
+}
+[2025-09-10 23:55:48] SYSTEM: {
+  "cpu_percent": 10.3,
+  "memory_percent": 83.7,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:51] SYSTEM: {
+  "cpu_percent": 22.1,
+  "memory_percent": 83.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:54] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:62463",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 16040,
+  "process_name": "NVIDIA Overlay.exe"
+}
+[2025-09-10 23:55:54] SYSTEM: {
+  "cpu_percent": 9.6,
+  "memory_percent": 83.9,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:55:57] SYSTEM: {
+  "cpu_percent": 10.2,
+  "memory_percent": 84.0,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:00] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64114-129.227.206.6:443"
+}
+[2025-09-10 23:56:00] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:62463"
+}
+[2025-09-10 23:56:00] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64112-129.227.206.6:443"
+}
+[2025-09-10 23:56:00] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64113-115.111.76.25:443"
+}
+[2025-09-10 23:56:00] SYSTEM: {
+  "cpu_percent": 8.2,
+  "memory_percent": 84.0,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:03] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64101-57.144.125.33:80"
+}
+[2025-09-10 23:56:03] SYSTEM: {
+  "cpu_percent": 8.0,
+  "memory_percent": 84.3,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:06] SYSTEM: {
+  "cpu_percent": 7.6,
+  "memory_percent": 84.4,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:09] SYSTEM: {
+  "cpu_percent": 5.9,
+  "memory_percent": 84.4,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:12] SYSTEM: {
+  "cpu_percent": 10.4,
+  "memory_percent": 84.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:15] SYSTEM: {
+  "cpu_percent": 5.9,
+  "memory_percent": 84.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:18] SYSTEM: {
+  "cpu_percent": 7.5,
+  "memory_percent": 84.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:22] SYSTEM: {
+  "cpu_percent": 9.7,
+  "memory_percent": 84.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:25] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64122",
+  "remote_address": "115.111.76.26:443",
+  "status": "ESTABLISHED",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:56:25] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64123",
+  "remote_address": "129.227.206.3:443",
+  "status": "ESTABLISHED",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:56:25] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:64378"
+}
+[2025-09-10 23:56:25] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::64378"
+}
+[2025-09-10 23:56:25] SYSTEM: {
+  "cpu_percent": 8.4,
+  "memory_percent": 84.8,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:28] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64124",
+  "remote_address": "129.227.206.7:443",
+  "status": "ESTABLISHED",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:56:28] SYSTEM: {
+  "cpu_percent": 7.5,
+  "memory_percent": 84.8,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:31] SYSTEM: {
+  "cpu_percent": 5.7,
+  "memory_percent": 84.7,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:34] SYSTEM: {
+  "cpu_percent": 10.7,
+  "memory_percent": 84.7,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:37] SYSTEM: {
+  "cpu_percent": 12.7,
+  "memory_percent": 83.7,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:40] SYSTEM: {
+  "cpu_percent": 9.6,
+  "memory_percent": 83.8,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:43] SYSTEM: {
+  "cpu_percent": 11.9,
+  "memory_percent": 84.1,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:46] SYSTEM: {
+  "cpu_percent": 17.7,
+  "memory_percent": 85.0,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:49] SYSTEM: {
+  "cpu_percent": 14.0,
+  "memory_percent": 85.4,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:52] SYSTEM: {
+  "cpu_percent": 14.0,
+  "memory_percent": 86.0,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:55] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64098-162.159.192.1:443"
+}
+[2025-09-10 23:56:55] SYSTEM: {
+  "cpu_percent": 10.6,
+  "memory_percent": 86.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:56:58] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64123-129.227.206.3:443"
+}
+[2025-09-10 23:56:58] SYSTEM: {
+  "cpu_percent": 9.6,
+  "memory_percent": 86.8,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:01] SYSTEM: {
+  "cpu_percent": 15.6,
+  "memory_percent": 86.8,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:04] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:64089-127.0.0.1:64090"
+}
+[2025-09-10 23:57:04] SYSTEM: {
+  "cpu_percent": 11.3,
+  "memory_percent": 86.8,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:08] SYSTEM: {
+  "cpu_percent": 11.7,
+  "memory_percent": 86.7,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:11] SYSTEM: {
+  "cpu_percent": 16.6,
+  "memory_percent": 86.4,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:14] SYSTEM: {
+  "cpu_percent": 12.1,
+  "memory_percent": 86.5,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:17] PROCESS: {
+  "action": "started",
+  "pid": 3600,
+  "name": "WmiPrvSE.exe",
+  "username": "NT AUTHORITY\\LOCAL SERVICE"
+}
+[2025-09-10 23:57:17] PROCESS: {
+  "action": "started",
+  "pid": 22096,
+  "name": "svchost.exe",
+  "username": "NT AUTHORITY\\SYSTEM"
+}
+[2025-09-10 23:57:17] SYSTEM: {
+  "cpu_percent": 15.6,
+  "memory_percent": 86.5,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:20] SYSTEM: {
+  "cpu_percent": 14.1,
+  "memory_percent": 86.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:23] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:8000-127.0.0.1:64120"
+}
+[2025-09-10 23:57:23] SYSTEM: {
+  "cpu_percent": 14.4,
+  "memory_percent": 86.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:26] SYSTEM: {
+  "cpu_percent": 11.7,
+  "memory_percent": 86.7,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:29] SYSTEM: {
+  "cpu_percent": 10.5,
+  "memory_percent": 86.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:32] SYSTEM: {
+  "cpu_percent": 13.2,
+  "memory_percent": 86.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64126",
+  "remote_address": "129.227.206.1:443",
+  "status": "ESTABLISHED",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:57:35] SYSTEM: {
+  "cpu_percent": 15.3,
+  "memory_percent": 86.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:38] SYSTEM: {
+  "cpu_percent": 18.6,
+  "memory_percent": 86.7,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:41] SYSTEM: {
+  "cpu_percent": 16.0,
+  "memory_percent": 86.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:44] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:59932",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 4256,
+  "process_name": "NVIDIA Overlay.exe"
+}
+[2025-09-10 23:57:44] SYSTEM: {
+  "cpu_percent": 16.0,
+  "memory_percent": 86.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:47] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64117-142.250.76.195:80"
+}
+[2025-09-10 23:57:47] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:8000-127.0.0.1:64121"
+}
+[2025-09-10 23:57:47] SYSTEM: {
+  "cpu_percent": 15.8,
+  "memory_percent": 86.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:51] SYSTEM: {
+  "cpu_percent": 14.6,
+  "memory_percent": 86.8,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:54] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:59933",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 16040,
+  "process_name": "NVIDIA Overlay.exe"
+}
+[2025-09-10 23:57:54] SYSTEM: {
+  "cpu_percent": 15.1,
+  "memory_percent": 87.1,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:57:57] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64128",
+  "remote_address": "162.159.192.1:443",
+  "status": "ESTABLISHED",
+  "pid": 5924,
+  "process_name": "warp-svc.exe"
+}
+[2025-09-10 23:57:57] SYSTEM: {
+  "cpu_percent": 15.3,
+  "memory_percent": 87.2,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:00] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:59933"
+}
+[2025-09-10 23:58:00] SYSTEM: {
+  "cpu_percent": 18.8,
+  "memory_percent": 87.2,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:03] SYSTEM: {
+  "cpu_percent": 13.6,
+  "memory_percent": 87.1,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:06] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:63514",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2552,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:58:06] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::63514",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2552,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:58:06] SYSTEM: {
+  "cpu_percent": 15.6,
+  "memory_percent": 87.3,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:09] PROCESS: {
+  "action": "started",
+  "pid": 18652,
+  "name": "svchost.exe",
+  "username": "NT AUTHORITY\\SYSTEM"
+}
+[2025-09-10 23:58:09] SYSTEM: {
+  "cpu_percent": 17.2,
+  "memory_percent": 87.9,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:12] SYSTEM: {
+  "cpu_percent": 17.3,
+  "memory_percent": 88.2,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:15] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:59932"
+}
+[2025-09-10 23:58:15] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::63514"
+}
+[2025-09-10 23:58:15] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:63514"
+}
+[2025-09-10 23:58:15] SYSTEM: {
+  "cpu_percent": 15.6,
+  "memory_percent": 88.2,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:18] SYSTEM: {
+  "cpu_percent": 17.7,
+  "memory_percent": 88.2,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:21] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49195",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2552,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:58:21] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64129",
+  "remote_address": "35.166.217.80:443",
+  "status": "ESTABLISHED",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:58:21] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64130",
+  "remote_address": "35.166.217.80:443",
+  "status": "SYN_SENT",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:58:21] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49195",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2552,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:58:21] SYSTEM: {
+  "cpu_percent": 20.4,
+  "memory_percent": 88.4,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:24] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64131",
+  "remote_address": "108.159.61.18:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2025-09-10 23:58:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64129-35.166.217.80:443"
+}
+[2025-09-10 23:58:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::49195"
+}
+[2025-09-10 23:58:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64130-35.166.217.80:443"
+}
+[2025-09-10 23:58:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:49195"
+}
+[2025-09-10 23:58:24] SYSTEM: {
+  "cpu_percent": 20.6,
+  "memory_percent": 88.7,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:27] PROCESS: {
+  "action": "started",
+  "pid": 22028,
+  "name": "taskhostw.exe",
+  "username": "NT AUTHORITY\\SYSTEM"
+}
+[2025-09-10 23:58:27] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64133",
+  "remote_address": "13.107.246.68:443",
+  "status": "ESTABLISHED",
+  "pid": 22028,
+  "process_name": "taskhostw.exe"
+}
+[2025-09-10 23:58:27] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:59152",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2552,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:58:27] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::59152",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2552,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:58:27] SYSTEM: {
+  "cpu_percent": 12.4,
+  "memory_percent": 88.7,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:30] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:59152"
+}
+[2025-09-10 23:58:30] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::59152"
+}
+[2025-09-10 23:58:30] SYSTEM: {
+  "cpu_percent": 14.6,
+  "memory_percent": 88.8,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:33] PROCESS: {
+  "action": "started",
+  "pid": 228,
+  "name": "RuntimeBroker.exe",
+  "username": "LAPTOP-U0SSEUSV\\Ankit"
+}
+[2025-09-10 23:58:33] PROCESS: {
+  "action": "started",
+  "pid": 8748,
+  "name": "sppsvc.exe",
+  "username": "NT AUTHORITY\\NETWORK SERVICE"
+}
+[2025-09-10 23:58:34] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:56247",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2552,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:58:34] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64134",
+  "remote_address": "20.42.65.89:443",
+  "status": "ESTABLISHED",
+  "pid": 7768,
+  "process_name": "OneDrive.exe"
+}
+[2025-09-10 23:58:34] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::56247",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2552,
+  "process_name": "svchost.exe"
+}
+[2025-09-10 23:58:34] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64135",
+  "remote_address": "52.183.220.149:443",
+  "status": "SYN_SENT",
+  "pid": 22028,
+  "process_name": "taskhostw.exe"
+}
+[2025-09-10 23:58:34] SYSTEM: {
+  "cpu_percent": 18.5,
+  "memory_percent": 89.1,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:37] PROCESS: {
+  "action": "terminated",
+  "pid": 22028
+}
+[2025-09-10 23:58:37] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64135-52.183.220.149:443"
+}
+[2025-09-10 23:58:37] SYSTEM: {
+  "cpu_percent": 13.9,
+  "memory_percent": 89.2,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:40] PROCESS: {
+  "action": "terminated",
+  "pid": 22380
+}
+[2025-09-10 23:58:40] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:56247"
+}
+[2025-09-10 23:58:40] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::56247"
+}
+[2025-09-10 23:58:40] SYSTEM: {
+  "cpu_percent": 13.2,
+  "memory_percent": 89.0,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:43] SYSTEM: {
+  "cpu_percent": 17.0,
+  "memory_percent": 88.9,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:46] PROCESS: {
+  "action": "terminated",
+  "pid": 10744
+}
+[2025-09-10 23:58:46] SYSTEM: {
+  "cpu_percent": 15.5,
+  "memory_percent": 88.9,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:49] PROCESS: {
+  "action": "terminated",
+  "pid": 22096
+}
+[2025-09-10 23:58:49] SYSTEM: {
+  "cpu_percent": 18.1,
+  "memory_percent": 88.9,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:52] SYSTEM: {
+  "cpu_percent": 11.3,
+  "memory_percent": 88.8,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:55] SYSTEM: {
+  "cpu_percent": 14.9,
+  "memory_percent": 88.9,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:58:58] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64115-129.227.206.5:443"
+}
+[2025-09-10 23:58:58] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64124-129.227.206.7:443"
+}
+[2025-09-10 23:58:58] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64122-115.111.76.26:443"
+}
+[2025-09-10 23:58:58] SYSTEM: {
+  "cpu_percent": 15.7,
+  "memory_percent": 88.9,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:01] SYSTEM: {
+  "cpu_percent": 16.2,
+  "memory_percent": 88.9,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:04] PROCESS: {
+  "action": "terminated",
+  "pid": 8748
+}
+[2025-09-10 23:59:04] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:56248",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 5924,
+  "process_name": "warp-svc.exe"
+}
+[2025-09-10 23:59:04] SYSTEM: {
+  "cpu_percent": 11.8,
+  "memory_percent": 88.8,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:07] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:56248"
+}
+[2025-09-10 23:59:07] SYSTEM: {
+  "cpu_percent": 16.2,
+  "memory_percent": 88.9,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:10] SYSTEM: {
+  "cpu_percent": 10.6,
+  "memory_percent": 88.9,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:13] SYSTEM: {
+  "cpu_percent": 17.9,
+  "memory_percent": 89.1,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:16] PROCESS: {
+  "action": "terminated",
+  "pid": 3600
+}
+[2025-09-10 23:59:16] SYSTEM: {
+  "cpu_percent": 14.6,
+  "memory_percent": 89.0,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:20] PROCESS: {
+  "action": "terminated",
+  "pid": 228
+}
+[2025-09-10 23:59:20] SYSTEM: {
+  "cpu_percent": 20.2,
+  "memory_percent": 89.1,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:23] SYSTEM: {
+  "cpu_percent": 14.6,
+  "memory_percent": 89.0,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:26] SYSTEM: {
+  "cpu_percent": 18.9,
+  "memory_percent": 89.0,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:29] SYSTEM: {
+  "cpu_percent": 18.6,
+  "memory_percent": 89.1,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:32] SYSTEM: {
+  "cpu_percent": 18.2,
+  "memory_percent": 89.2,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:35] SYSTEM: {
+  "cpu_percent": 20.9,
+  "memory_percent": 89.1,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:38] SYSTEM: {
+  "cpu_percent": 17.8,
+  "memory_percent": 89.1,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:41] SYSTEM: {
+  "cpu_percent": 18.2,
+  "memory_percent": 89.2,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:44] SYSTEM: {
+  "cpu_percent": 14.8,
+  "memory_percent": 89.3,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:47] SYSTEM: {
+  "cpu_percent": 12.6,
+  "memory_percent": 89.6,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:50] SYSTEM: {
+  "cpu_percent": 14.9,
+  "memory_percent": 89.4,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:53] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64136",
+  "remote_address": "129.227.206.7:443",
+  "status": "ESTABLISHED",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:59:53] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "192.168.0.103:64126-129.227.206.1:443"
+}
+[2025-09-10 23:59:53] SYSTEM: {
+  "cpu_percent": 11.3,
+  "memory_percent": 89.3,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:56] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:57155",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 16040,
+  "process_name": "NVIDIA Overlay.exe"
+}
+[2025-09-10 23:59:56] NETWORK: {
+  "action": "connection_established",
+  "local_address": "192.168.0.103:64137",
+  "remote_address": "129.227.206.7:443",
+  "status": "ESTABLISHED",
+  "pid": 12784,
+  "process_name": "brave.exe"
+}
+[2025-09-10 23:59:56] SYSTEM: {
+  "cpu_percent": 17.4,
+  "memory_percent": 89.4,
+  "disk_percent": 66.1
+}
+[2025-09-10 23:59:58] SYSTEM: {
+  "event": "audit_logger_stopped",
+  "timestamp": "2025-09-10T23:59:58.590899"
+}

@@ -1,0 +1,696 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLP Enterprise 3.0 - Enhanced Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #34495e;
+            --accent: #3498db;
+            --success: #2ecc71;
+            --warning: #f39c12;
+            --danger: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .navbar {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+        }
+        
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            border: none;
+        }
+        
+        .card-header {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: white;
+            border-radius: 10px 10px 0 0 !important;
+            font-weight: bold;
+        }
+        
+        .status-badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .status-active {
+            background-color: var(--success);
+            color: white;
+        }
+        
+        .status-warning {
+            background-color: var(--warning);
+            color: white;
+        }
+        
+        .status-danger {
+            background-color: var(--danger);
+            color: white;
+        }
+        
+        .nav-tabs .nav-link {
+            color: var(--dark);
+            font-weight: 500;
+        }
+        
+        .nav-tabs .nav-link.active {
+            color: var(--accent);
+            font-weight: bold;
+            border-bottom: 3px solid var(--accent);
+        }
+        
+        .real-time-log {
+            height: 300px;
+            overflow-y: auto;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .log-entry {
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #4a6572;
+        }
+        
+        .log-time {
+            color: #3498db;
+            font-weight: bold;
+        }
+        
+        .log-info {
+            color: #2ecc71;
+        }
+        
+        .log-warning {
+            color: #f39c12;
+        }
+        
+        .log-danger {
+            color: #e74c3c;
+        }
+        
+        .threat-indicator {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+        
+        .dashboard-section {
+            display: none;
+        }
+        
+        .dashboard-section.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-shield-alt me-2"></i>
+                DLP Enterprise 3.0
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link dashboard-nav" href="#" data-section="overview">
+                            <i class="fas fa-tachometer-alt me-1"></i> Overview
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dashboard-nav" href="#" data-section="network">
+                            <i class="fas fa-network-wired me-1"></i> Network
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dashboard-nav" href="#" data-section="system">
+                            <i class="fas fa-desktop me-1"></i> System
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dashboard-nav" href="#" data-section="threats">
+                            <i class="fas fa-virus me-1"></i> Threats
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dashboard-nav" href="#" data-section="audit">
+                            <i class="fas fa-clipboard-list me-1"></i> Audit Log
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <span class="navbar-text">
+                        <i class="fas fa-circle text-success me-1"></i> 
+                        <span id="connection-status">Connected</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <!-- Overview Section -->
+        <div id="overview" class="dashboard-section active">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-microchip fa-3x mb-2 text-primary"></i>
+                            <h5>CPU Usage</h5>
+                            <h2 id="cpu-usage">0%</h2>
+                            <div class="progress mb-2">
+                                <div id="cpu-progress" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-memory fa-3x mb-2 text-info"></i>
+                            <h5>Memory Usage</h5>
+                            <h2 id="memory-usage">0%</h2>
+                            <div class="progress mb-2">
+                                <div id="memory-progress" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hdd fa-3x mb-2 text-warning"></i>
+                            <h5>Disk Usage</h5>
+                            <h2 id="disk-usage">0%</h2>
+                            <div class="progress mb-2">
+                                <div id="disk-progress" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-network-wired fa-3x mb-2 text-success"></i>
+                            <h5>Network Traffic</h5>
+                            <h2 id="network-traffic">0 KB/s</h2>
+                            <div class="progress mb-2">
+                                <div id="network-progress" class="progress-bar" role="progressbar" style="width: 0%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-project-diagram me-2"></i> System Status
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>File Scanner:</span>
+                                        <span id="file-scanner-status" class="status-badge status-active">Active</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>USB Monitor:</span>
+                                        <span id="usb-monitor-status" class="status-badge status-active">Active</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>Firewall:</span>
+                                        <span id="firewall-status" class="status-badge status-active">Active</span>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>Blockchain:</span>
+                                        <span id="blockchain-status" class="status-badge status-active">Active</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span>Last Scan:</span>
+                                        <span id="last-scan-time">Never</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-chart-line me-2"></i> Performance Metrics
+                        </div>
+                        <div class="card-body">
+                            <canvas id="performance-chart" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-list me-2"></i> Recent Activities
+                        </div>
+                        <div class="card-body p-0">
+                            <div class="real-time-log" id="activity-log">
+                                <div class="log-entry">
+                                    <span class="log-time">[00:00:00]</span>
+                                    <span class="log-info">System initialized. Waiting for data...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Network Section -->
+        <div id="network" class="dashboard-section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-network-wired me-2"></i> Network Scanner</span>
+                            <button class="btn btn-sm btn-primary" id="start-network-scan">
+                                <i class="fas fa-play me-1"></i> Start Scan
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="scan-target" class="form-label">Scan Target</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="scan-target" value="192.168.1.0/24">
+                                        <button class="btn btn-outline-secondary" type="button" id="quick-scan-options">
+                                            <i class="fas fa-bolt"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="scan-type" class="form-label">Scan Type</label>
+                                    <select class="form-select" id="scan-type">
+                                        <option value="quick">Quick Scan</option>
+                                        <option value="full">Full Scan</option>
+                                        <option value="stealth">Stealth Scan</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="scan-ports" class="form-label">Ports</label>
+                                    <input type="text" class="form-control" id="scan-ports" value="1-1000">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="progress mb-3" id="scan-progress-container" style="display: none;">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                                             id="scan-progress" role="progressbar" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="real-time-log" id="network-scan-results">
+                                        <div class="log-entry">
+                                            <span class="log-time">[00:00:00]</span>
+                                            <span class="log-info">Network scanner ready. Configure scan and click Start.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- System Section -->
+        <div id="system" class="dashboard-section">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-microchip me-2"></i> CPU Usage
+                        </div>
+                        <div class="card-body">
+                            <canvas id="cpu-chart" height="250"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-memory me-2"></i> Memory Usage
+                        </div>
+                        <div class="card-body">
+                            <canvas id="memory-chart" height="250"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-hdd me-2"></i> Disk Usage
+                        </div>
+                        <div class="card-body">
+                            <canvas id="disk-chart" height="250"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-network-wired me-2"></i> Network Usage
+                        </div>
+                        <div class="card-body">
+                            <canvas id="network-chart" height="250"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-info-circle me-2"></i> System Information
+                        </div>
+                        <div class="card-body">
+                            <div class="row" id="system-info">
+                                <div class="col-md-3">
+                                    <strong>Hostname:</strong> <span id="info-hostname">Loading...</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <strong>OS:</strong> <span id="info-os">Loading...</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <strong>CPU:</strong> <span id="info-cpu">Loading...</span>
+                                </div>
+                                <div class="col-md-3">
+                                    <strong>RAM:</strong> <span id="info-ram">Loading...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Threats Section -->
+        <div id="threats" class="dashboard-section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-virus me-2"></i> Threat Detection</span>
+                            <span class="badge bg-danger" id="threat-count">0 Threats</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover" id="threats-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Time</th>
+                                            <th>Type</th>
+                                            <th>Severity</th>
+                                            <th>Source</th>
+                                            <th>Target</th>
+                                            <th>Description</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="7" class="text-center">No threats detected</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fas fa-chart-pie me-2"></i> Threat Distribution
+                        </div>
+                        <div class="card-body">
+                            <canvas id="threat-chart" height="250"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <i class="fasfa-history me-2"></i> Threat Timeline
+                        </div>
+                        <div class="card-body">
+                            <canvas id="threat-timeline-chart" height="250"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Audit Log Section -->
+        <div id="audit" class="dashboard-section">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between align-items-center">
+                            <span><i class="fas fa-clipboard-list me-2"></i> Audit Log</span>
+                            <div>
+                                <button class="btn btn-sm btn-outline-secondary me-2" id="export-audit-log">
+                                    <i class="fas fa-download me-1"></i> Export
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger" id="clear-audit-log">
+                                    <i class="fas fa-trash me-1"></i> Clear
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-3">
+                                <div class="col-md-3">
+                                    <label for="log-level-filter" class="form-label">Log Level</label>
+                                    <select class="form-select" id="log-level-filter">
+                                        <option value="all">All Levels</option>
+                                        <option value="info">Info</option>
+                                        <option value="warning">Warning</option>
+                                        <option value="danger">Danger</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="log-source-filter" class="form-label">Source</label>
+                                    <select class="form-select" id="log-source-filter">
+                                        <option value="all">All Sources</option>
+                                        <option value="system">System</option>
+                                        <option value="network">Network</option>
+                                        <option value="security">Security</option>
+                                        <option value="user">User</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="log-date-from" class="form-label">From</label>
+                                    <input type="datetime-local" class="form-control" id="log-date-from">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="log-date-to" class="form-label">To</label>
+                                    <input type="datetime-local" class="form-control" id="log-date-to">
+                                </div>
+                            </div>
+                            <div class="real-time-log" id="audit-log-content">
+                                <div class="log-entry">
+                                    <span class="log-time">[00:00:00]</span>
+                                    <span class="log-info">Audit log initialized. Waiting for entries...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Dashboard navigation
+        document.querySelectorAll('.dashboard-nav').forEach(navItem => {
+            navItem.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // Update active navigation
+                document.querySelectorAll('.dashboard-nav').forEach(item => {
+                    item.classList.remove('active');
+                });
+                this.classList.add('active');
+                
+                // Show corresponding section
+                const sectionId = this.getAttribute('data-section');
+                document.querySelectorAll('.dashboard-section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(sectionId).classList.add('active');
+            });
+        });
+
+        // Real-time data update function
+        async function updateDashboardData() {
+            try {
+                const response = await fetch('/api/status');
+                if (!response.ok) throw new Error('API request failed');
+                
+                const data = await response.json();
+                
+                // Update system status
+                document.getElementById('file-scanner-status').textContent = data.file_scanner;
+                document.getElementById('usb-monitor-status').textContent = data.usb_monitor;
+                document.getElementById('firewall-status').textContent = data.firewall;
+                document.getElementById('blockchain-status').textContent = data.blockchain;
+                document.getElementById('last-scan-time').textContent = new Date(data.last_scan).toLocaleString();
+                
+                // Update status badges
+                updateStatusBadge('file-scanner-status', data.file_scanner);
+                updateStatusBadge('usb-monitor-status', data.usb_monitor);
+                updateStatusBadge('firewall-status', data.firewall);
+                updateStatusBadge('blockchain-status', data.blockchain);
+                
+                // Add to activity log
+                addLogEntry('system', 'info', 'System status updated');
+                
+            } catch (error) {
+                console.error('Error updating dashboard:', error);
+                addLogEntry('system', 'danger', Error updating dashboard: );
+            }
+        }
+        
+        function updateStatusBadge(elementId, status) {
+            const element = document.getElementById(elementId);
+            element.className = 'status-badge ';
+            
+            if (status === 'active') {
+                element.classList.add('status-active');
+            } else if (status === 'warning') {
+                element.classList.add('status-warning');
+            } else {
+                element.classList.add('status-danger');
+            }
+        }
+        
+        function addLogEntry(source, level, message) {
+            const logElement = document.getElementById('activity-log');
+            const time = new Date().toLocaleTimeString();
+            const logEntry = document.createElement('div');
+            logEntry.className = 'log-entry';
+            logEntry.innerHTML = <span class="log-time">[]</span> <span class="log-"></span>;
+            
+            logElement.prepend(logEntry);
+            
+            // Keep only the last 50 entries
+            if (logElement.children.length > 50) {
+                logElement.removeChild(logElement.lastChild);
+            }
+            
+            // Auto-scroll to bottom
+            logElement.scrollTop = 0;
+        }
+        
+        // Simulate real-time system metrics
+        function updateSystemMetrics() {
+            // Generate random metrics (in a real system, these would come from the API)
+            const cpuUsage = Math.floor(Math.random() * 100);
+            const memoryUsage = Math.floor(Math.random() * 100);
+            const diskUsage = Math.floor(Math.random() * 100);
+            const networkTraffic = Math.floor(Math.random() * 1000);
+            
+            // Update metrics display
+            document.getElementById('cpu-usage').textContent = ${cpuUsage}%;
+            document.getElementById('memory-usage').textContent = ${memoryUsage}%;
+            document.getElementById('disk-usage').textContent = ${diskUsage}%;
+            document.getElementById('network-traffic').textContent = ${networkTraffic} KB/s;
+            
+            // Update progress bars
+            document.getElementById('cpu-progress').style.width = ${cpuUsage}%;
+            document.getElementById('memory-progress').style.width = ${memoryUsage}%;
+            document.getElementById('disk-progress').style.width = ${diskUsage}%;
+            document.getElementById('network-progress').style.width = ${Math.min(networkTraffic / 10, 100)}%;
+            
+            // Update progress bar colors based on usage
+            updateProgressBarColor('cpu-progress', cpuUsage);
+            updateProgressBarColor('memory-progress', memoryUsage);
+            updateProgressBarColor('disk-progress', diskUsage);
+        }
+        
+        function updateProgressBarColor(elementId, value) {
+            const element = document.getElementById(elementId);
+            element.classList.remove('bg-success', 'bg-warning', 'bg-danger');
+            
+            if (value < 60) {
+                element.classList.add('bg-success');
+            } else if (value < 85) {
+                element.classList.add('bg-warning');
+            } else {
+                element.classList.add('bg-danger');
+            }
+        }
+        
+        // Initialize the dashboard
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Enhanced dashboard initialized');
+            
+            // Start periodic updates
+            updateDashboardData();
+            updateSystemMetrics();
+            
+            setInterval(updateDashboardData, 5000);
+            setInterval(updateSystemMetrics, 2000);
+            
+            // Add initial log entry
+            addLogEntry('system', 'info', 'Enhanced dashboard initialized successfully');
+        });
+    </script>
+</body>
+</html>

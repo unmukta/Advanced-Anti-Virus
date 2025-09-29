@@ -1,0 +1,39 @@
+# dlp_enterprise/docker-compose.yml
+version: '3.8'
+
+services:
+  dlp-enterprise:
+    build: .
+    ports:
+      - \"5001:5001\"
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://dlp_user:dlp_password@postgres:5432/dlp_enterprise
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - postgres
+      - redis
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:14
+    environment:
+      - POSTGRES_USER=dlp_user
+      - POSTGRES_PASSWORD=dlp_password
+      - POSTGRES_DB=dlp_enterprise
+    ports:
+      - \"5432:5432\"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - \"6379:6379\"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:

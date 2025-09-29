@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Structure Test</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const elements = [
+                'system-health',
+                'component-status',
+                'performance-metrics',
+                'database-status',
+                'activity-log'
+            ];
+            
+            elements.forEach(id => {
+                const el = document.getElementById(id);
+                console.log(\Element #\: \, el ? 'Found' : 'NOT FOUND');
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>DOM Structure Test</h1>
+    <div id="system-health">System Health</div>
+    <div id="component-status">Component Status</div>
+    <div id="performance-metrics">Performance Metrics</div>
+    <div id="database-status">Database Status</div>
+    <div id="activity-log">Activity Log</div>
+</body>
+</html>

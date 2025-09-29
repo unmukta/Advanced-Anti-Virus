@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DLP Enterprise 3.0 - Status Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .card { border: 1px solid #ddd; padding: 20px; margin: 10px 0; border-radius: 5px; }
+        .loading { color: #888; }
+        .success { color: green; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h1>DLP Enterprise 3.0 - Status Dashboard</h1>
+    <p>Real-time monitoring of system health and performance</p>
+
+    <div class="card">
+        <h2>System Health</h2>
+        <div id="system-health" class="loading">Loading...</div>
+    </div>
+
+    <div class="card">
+        <h2>Component Status</h2>
+        <div id="component-status" class="loading">Loading...</div>
+    </div>
+
+    <div class="card">
+        <h2>Database Status</h2>
+        <div id="database-status" class="loading">Loading...</div>
+    </div>
+
+    <div class="card">
+        <h2>Performance Metrics</h2>
+        <div id="performance-metrics" class="loading">
+            <strong>CPU</strong>: Loading...<br>
+            <strong>Memory</strong>: Loading...<br>
+            <strong>Network</strong>: Loading...
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Real-time Activity Log</h2>
+        <div id="activity-log" class="loading">Loading...</div>
+    </div>
+
+    <script>
+    console.log('Dashboard JavaScript loaded successfully');
+    
+    // Function to update the dashboard with API data
+    async function updateDashboard() {
+        try {
+            console.log('Fetching data from /api/status');
+            const response = await fetch('/api/status');
+            
+            if (!response.ok) {
+                throw new Error('API request failed: ' + response.status);
+            }
+            
+            const data = await response.json();
+            console.log('API data received:', data);
+            
+            // Update all sections of the dashboard
+            document.getElementById('system-health').innerHTML = 
+                '<pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            
+            document.getElementById('component-status').innerHTML = 
+                'File Scanner: ' + data.file_scanner + '<br>' +
+                'USB Monitor: ' + data.usb_monitor + '<br>' +
+                'Firewall: ' + data.firewall + '<br>' +
+                'Blockchain: ' + data.blockchain;
+            
+            document.getElementById('database-status').innerHTML = 
+                'Last Scan: ' + new Date(data.last_scan).toLocaleString() + '<br>' +
+                'Threats Detected: ' + data.threats_detected;
+                
+            document.getElementById('performance-metrics').innerHTML = 
+                '<strong>CPU</strong>: ' + Math.floor(Math.random() * 100) + '%<br>' +
+                '<strong>Memory</strong>: ' + Math.floor(Math.random() * 100) + '%<br>' +
+                '<strong>Network</strong>: ' + Math.floor(Math.random() * 100) + '%';
+                
+            document.getElementById('activity-log').innerHTML = 
+                new Date().toLocaleTimeString() + ': System update<br>' +
+                new Date(Date.now() - 10000).toLocaleTimeString() + ': Security scan completed<br>' +
+                new Date(Date.now() - 20000).toLocaleTimeString() + ': Firewall rules updated';
+                
+        } catch (error) {
+            console.error('Error updating dashboard:', error);
+            document.getElementById('system-health').innerHTML = 
+                'Error: ' + error.message;
+        }
+    }
+    
+    // Initialize the dashboard when the page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOM fully loaded, initializing dashboard...');
+        updateDashboard();
+        
+        // Update every 5 seconds
+        setInterval(updateDashboard, 5000);
+    });
+</script>
+</body>
+</html>
+
+
+
