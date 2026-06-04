@@ -16,8 +16,8 @@ import platform
 import json
 
 # Import system stats monitor and audit logger
-from system_stats import SystemMonitor
-from audit_logger import audit_logger
+from core.monitor import SystemMonitor
+from core.logger import audit_logger
 
 # Initialize System Monitor
 system_monitor = SystemMonitor()
@@ -33,9 +33,9 @@ async def lifespan(app: FastAPI):
 
 # Initialize FastAPI application with lifespan management
 app = FastAPI(
-    title="DLP Enterprise 3.0",
-    description="Next-Generation Data Loss Prevention System",
-    version="3.0.0",
+    title="UbiquiShield",
+    description="Ubiquitous Real-Time System Monitoring & Security Suite",
+    version="1.0.0",
     lifespan=lifespan
 )
 
@@ -211,17 +211,17 @@ async def network_scan(target: str = "192.168.1.0/24", scan_type: str = "quick",
                 {
                     "host": "192.168.1.1",
                     "status": "up",
-                    "hostname": "DC01.corp.local",
-                    "open_ports": [53, 88, 135, 139, 389, 445, 636, 3268, 5985],
+                    "hostname": "gateway.local",
+                    "open_ports": [53, 80, 443],
                     "services": {
-                        "53": {"name": "domain", "version": "Microsoft DNS"},
-                        "389": {"name": "ldap", "version": "Microsoft Windows Active Directory LDAP"},
-                        "445": {"name": "microsoft-ds", "version": "Windows Server 2022 Domain Controller"}
+                        "53": {"name": "domain", "version": "DNS Server"},
+                        "80": {"name": "http", "version": "Router Web Console"},
+                        "443": {"name": "https", "version": "Router Web Console (SSL)"}
                     },
-                    "os_guess": "Windows Server 2022 20348 (96%)",
+                    "os_guess": "Linux Router OS (96%)",
                     "latency": "0.45ms",
                     "mac_address": "00:0C:29:AB:CD:EF",
-                    "vendor": "VMware",
+                    "vendor": "Cisco",
                     "uptime": "7 days, 12:34:56"
                 }
             ]
@@ -230,17 +230,16 @@ async def network_scan(target: str = "192.168.1.0/24", scan_type: str = "quick",
                 {
                     "host": "192.168.1.1",
                     "status": "up",
-                    "hostname": "DC01.corp.local",
-                    "open_ports": [53, 389, 445],
+                    "hostname": "gateway.local",
+                    "open_ports": [53, 443],
                     "services": {
-                        "53": {"name": "domain", "version": "Microsoft DNS"},
-                        "389": {"name": "ldap", "version": "Microsoft Windows Active Directory LDAP"},
-                        "445": {"name": "microsoft-ds", "version": "Windows Server 2022 Domain Controller"}
+                        "53": {"name": "domain", "version": "DNS Server"},
+                        "443": {"name": "https", "version": "Router Web Console (SSL)"}
                     },
-                    "os_guess": "Windows Server 2022 20348 (90%)",
+                    "os_guess": "Linux Router OS (90%)",
                     "latency": "0.48ms",
                     "mac_address": "00:0C:29:AB:CD:EF",
-                    "vendor": "VMware",
+                    "vendor": "Cisco",
                     "uptime": "7 days, 12:34:56"
                 }
             ]
@@ -249,31 +248,31 @@ async def network_scan(target: str = "192.168.1.0/24", scan_type: str = "quick",
                 {
                     "host": "192.168.1.1",
                     "status": "up",
-                    "hostname": "DC01.corp.local",
-                    "open_ports": [53, 88, 135, 139, 389, 445, 5985],
+                    "hostname": "gateway.local",
+                    "open_ports": [53, 80, 443],
                     "services": {
-                        "53": {"name": "domain", "version": "Microsoft DNS"},
-                        "445": {"name": "microsoft-ds", "version": "Windows Server 2022"}
+                        "53": {"name": "domain", "version": "DNS Server"},
+                        "443": {"name": "https", "version": "Router Web Console"}
                     },
-                    "os_guess": "Windows Server 2022 (92%)",
+                    "os_guess": "Linux Router OS (92%)",
                     "latency": "0.45ms",
                     "mac_address": "00:0C:29:AB:CD:EF",
-                    "vendor": "VMware",
+                    "vendor": "Cisco",
                     "uptime": "7 days, 12:34:56"
                 },
                 {
-                    "host": "192.168.1.2",
+                    "host": "192.168.1.100",
                     "status": "up",
-                    "hostname": "WS01.corp.local",
-                    "open_ports": [135, 139, 445, 3389, 5985],
+                    "hostname": "workstation-pc",
+                    "open_ports": [135, 139, 445, 3389],
                     "services": {
                         "445": {"name": "microsoft-ds", "version": "Windows 11 Pro"},
-                        "3389": {"name": "ms-wbt-server", "version": "Microsoft Terminal Services"}
+                        "3389": {"name": "ms-wbt-server", "version": "Remote Desktop"}
                     },
-                    "os_guess": "Windows 11 22621 (94%)",
+                    "os_guess": "Windows 11 22H2 (94%)",
                     "latency": "1.2ms",
                     "mac_address": "00:50:56:C0:00:08",
-                    "vendor": "VMware",
+                    "vendor": "Intel Corp",
                     "uptime": "2 days, 12:30:15"
                 }
             ]
@@ -370,7 +369,7 @@ async def export_audit_logs():
             return FileResponse(
                 log_file, 
                 media_type="text/plain", 
-                filename=f"dlp_audit_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+                filename=f"ubiquishield_audit_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
             )
         raise HTTPException(status_code=404, detail="Active log file not found")
     except Exception as e:
@@ -383,7 +382,7 @@ async def get_ai_status():
     """Get AI content policy engine status"""
     return {
         "status": "active",
-        "version": "ai_v1_enterprise",
+        "version": "ubiquishield_v1",
         "zero_trust": True
     }
 
@@ -421,7 +420,7 @@ async def analyze_content(content: dict):
             "risk_score": min(risk_score, 100),
             "triggers": triggers,
             "recommendation": recommendation,
-            "enterprise": True
+            "monitored": True
         }
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"AI analysis failed: {str(e)}")
@@ -472,7 +471,7 @@ async def get_threats():
                             "target": data.get('name'),
                             "description": f"Interpreter or binary execution: {data.get('name')}",
                             "action": "Monitored",
-                            "details": f"Process execution monitored under standard DLP posture. User: {data.get('username') or 'SYSTEM'}"
+                            "details": f"Process execution monitored under standard UbiquiShield posture. User: {data.get('username') or 'SYSTEM'}"
                         })
             except Exception as e:
                 continue

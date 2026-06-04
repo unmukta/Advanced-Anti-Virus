@@ -3,34 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DLP Enterprise 3.0 - SYSTEM</title>
+    <title>UbiquiShield - System</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        .navbar { background: linear-gradient(135deg, #2c3e50, #34495e); }
-        .card { border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
-        .card-header { background: linear-gradient(135deg, #34495e, #2c3e50); color: white; border-radius: 10px 10px 0 0 !important; }
-        .status-badge { padding: 5px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: bold; }
-        .status-active { background-color: #2ecc71; color: white; }
-        .status-warning { background-color: #f39c12; color: white; }
-        .status-danger { background-color: #e74c3c; color: white; }
-        .real-time-log { height: 300px; overflow-y: auto; background-color: #2c3e50; color: #ecf0f1; padding: 15px; border-radius: 5px; font-family: 'Courier New', monospace; }
-        .log-entry { margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px solid #4a6572; }
-        .log-time { color: #3498db; font-weight: bold; }
-        .log-info { color: #2ecc71; }
-        .log-warning { color: #f39c12; }
-        .log-danger { color: #e74c3c; }
-    </style>
+    <link href="/static/style.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark mb-4">
         <div class="container-fluid">
             <a class="navbar-brand" href="/overview">
-                <i class="fas fa-shield-alt me-2"></i>DLP Enterprise 3.0
+                <i class="fas fa-shield-alt me-2"></i>UbiquiShield
             </a>
             <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="/overview"><i class="fas fa-tachometer-alt me-1"></i> Overview</a></li>
                     <li class="nav-item"><a class="nav-link" href="/network"><i class="fas fa-network-wired me-1"></i> Network</a></li>
                     <li class="nav-item"><a class="nav-link active" href="/system"><i class="fas fa-desktop me-1"></i> System</a></li>
@@ -41,64 +27,64 @@
         </div>
     </nav>
 
-    <div class="container-fluid">
-        <h1>DLP Enterprise 3.0 - SYSTEM</h1>
+    <div class="container mt-4">
+        <h1 class="mb-4">SYSTEM ENVIRONMENT</h1>
         
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header"><i class="fas fa-microchip me-2"></i> CPU Usage</div>
+                    <div class="card-header"><i class="fas fa-microchip me-2"></i> CPU Utilization</div>
                     <div class="card-body">
-                        <canvas id="cpu-chart" height="250"></canvas>
+                        <canvas id="cpu-chart" height="200"></canvas>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header"><i class="fas fa-memory me-2"></i> Memory Usage</div>
+                    <div class="card-header"><i class="fas fa-memory me-2"></i> Memory Utilization</div>
                     <div class="card-body">
-                        <canvas id="memory-chart" height="250"></canvas>
+                        <canvas id="memory-chart" height="200"></canvas>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="row mt-4">
+        <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header"><i class="fas fa-hdd me-2"></i> Disk Usage</div>
+                    <div class="card-header"><i class="fas fa-hdd me-2"></i> Disk Storage</div>
                     <div class="card-body">
-                        <canvas id="disk-chart" height="250"></canvas>
+                        <canvas id="disk-chart" height="200"></canvas>
                     </div>
                 </div>
             </div>
             <div class="col-md-6">
                 <div class="card">
-                    <div class="card-header"><i class="fas fa-network-wired me-2"></i> Network Usage</div>
+                    <div class="card-header"><i class="fas fa-network-wired me-2"></i> Network Throughput</div>
                     <div class="card-body">
-                        <canvas id="network-chart" height="250"></canvas>
+                        <canvas id="network-chart" height="200"></canvas>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="row mt-4">
+        <div class="row">
             <div class="col-12">
                 <div class="card">
-                    <div class="card-header"><i class="fas fa-info-circle me-2"></i> System Information</div>
+                    <div class="card-header"><i class="fas fa-info-circle me-2"></i> Device Specifications</div>
                     <div class="card-body">
                         <div class="row" id="system-info">
-                            <div class="col-md-3">
-                                <strong>Hostname:</strong> <span id="info-hostname">Loading...</span>
+                            <div class="col-md-3 mb-2">
+                                <strong>Hostname:</strong> <span id="info-hostname" class="text-secondary">Loading...</span>
                             </div>
-                            <div class="col-md-3">
-                                <strong>OS:</strong> <span id="info-os">Loading...</span>
+                            <div class="col-md-3 mb-2">
+                                <strong>OS:</strong> <span id="info-os" class="text-secondary">Loading...</span>
                             </div>
-                            <div class="col-md-3">
-                                <strong>CPU:</strong> <span id="info-cpu">Loading...</span>
+                            <div class="col-md-3 mb-2">
+                                <strong>Processor:</strong> <span id="info-cpu" class="text-secondary">Loading...</span>
                             </div>
-                            <div class="col-md-3">
-                                <strong>RAM:</strong> <span id="info-ram">Loading...</span>
+                            <div class="col-md-3 mb-2">
+                                <strong>Installed RAM:</strong> <span id="info-ram" class="text-secondary">Loading...</span>
                             </div>
                         </div>
                     </div>
@@ -106,25 +92,25 @@
             </div>
         </div>
         
-        <div class="row mt-4">
+        <div class="row">
             <div class="col-12">
                 <div class="card">
-                    <div class="card-header"><i class="fas fa-tasks me-2"></i> Running Processes</div>
-                    <div class="card-body">
+                    <div class="card-header"><i class="fas fa-tasks me-2"></i> Active Processes</div>
+                    <div class="card-body p-0">
                         <div class="table-responsive">
                             <table class="table table-striped" id="processes-table">
                                 <thead>
                                     <tr>
                                         <th>PID</th>
-                                        <th>Name</th>
-                                        <th>CPU %</th>
-                                        <th>Memory %</th>
-                                        <th>Status</th>
+                                        <th>Process Name</th>
+                                        <th>CPU Usage</th>
+                                        <th>Memory Usage</th>
+                                        <th>State</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td colspan="5" class="text-center">Loading process information...</td>
+                                        <td colspan="5" class="text-center">Loading process list...</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -137,10 +123,13 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Charts
         let cpuChart, memoryChart, diskChart, networkChart;
         
         function initializeCharts() {
+            // Adjust chart defaults for dark theme
+            Chart.defaults.color = '#94a3b8';
+            Chart.defaults.borderColor = 'rgba(255, 255, 255, 0.08)';
+
             // CPU Chart
             const cpuCtx = document.getElementById('cpu-chart').getContext('2d');
             cpuChart = new Chart(cpuCtx, {
@@ -150,20 +139,16 @@
                     datasets: [{
                         label: 'CPU Usage (%)',
                         data: Array(20).fill(0),
-                        borderColor: 'rgb(54, 162, 235)',
-                        backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                        borderColor: '#0ea5e9',
+                        backgroundColor: 'rgba(14, 165, 233, 0.1)',
+                        borderWidth: 2,
                         tension: 0.4,
                         fill: true
                     }]
                 },
                 options: {
                     responsive: true,
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: 'CPU Usage'
-                        }
-                    },
+                    maintainAspectRatio: false,
                     scales: {
                         y: {
                             beginAtZero: true,
@@ -186,20 +171,16 @@
                     datasets: [{
                         label: 'Memory Usage (%)',
                         data: Array(20).fill(0),
-                        borderColor: 'rgb(255, 99, 132)',
-                        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                        borderColor: '#10b981',
+                        backgroundColor: 'rgba(16, 185, 129, 0.1)',
+                        borderWidth: 2,
                         tension: 0.4,
                         fill: true
                     }]
                 },
                 options: {
                     responsive: true,
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: 'Memory Usage'
-                        }
-                    },
+                    maintainAspectRatio: false,
                     scales: {
                         y: {
                             beginAtZero: true,
@@ -218,21 +199,26 @@
             diskChart = new Chart(diskCtx, {
                 type: 'doughnut',
                 data: {
-                    labels: ['Used', 'Free'],
+                    labels: ['Used (%)', 'Free (%)'],
                     datasets: [{
-                        data: [65, 35],
+                        data: [50, 50],
                         backgroundColor: [
-                            'rgb(255, 99, 132)',
-                            'rgb(54, 162, 235)'
-                        ]
+                            'rgba(239, 68, 68, 0.8)',
+                            'rgba(14, 165, 233, 0.8)'
+                        ],
+                        borderColor: 'rgba(15, 23, 42, 0.6)',
+                        borderWidth: 1
                     }]
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
-                        title: {
-                            display: true,
-                            text: 'Disk Usage'
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                color: '#f8fafc'
+                            }
                         }
                     }
                 }
@@ -248,16 +234,18 @@
                         {
                             label: 'Received (KB/s)',
                             data: Array(20).fill(0),
-                            borderColor: 'rgb(75, 192, 192)',
-                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                            borderColor: '#10b981',
+                            backgroundColor: 'rgba(16, 185, 129, 0.05)',
+                            borderWidth: 2,
                             tension: 0.4,
                             fill: true
                         },
                         {
                             label: 'Sent (KB/s)',
                             data: Array(20).fill(0),
-                            borderColor: 'rgb(153, 102, 255)',
-                            backgroundColor: 'rgba(153, 102, 255, 0.2)',
+                            borderColor: '#f59e0b',
+                            backgroundColor: 'rgba(245, 158, 11, 0.05)',
+                            borderWidth: 2,
                             tension: 0.4,
                             fill: true
                         }
@@ -265,12 +253,7 @@
                 },
                 options: {
                     responsive: true,
-                    plugins: {
-                        title: {
-                            display: true,
-                            text: 'Network Usage'
-                        }
-                    },
+                    maintainAspectRatio: false,
                     scales: {
                         y: {
                             beginAtZero: true,
@@ -295,18 +278,18 @@
                 if (cpuChart.data.datasets[0].data.length > 20) {
                     cpuChart.data.datasets[0].data.shift();
                 }
-                cpuChart.update();
+                cpuChart.update('none');
                 
                 // Update Memory Chart
                 memoryChart.data.datasets[0].data.push(data.memory_usage);
                 if (memoryChart.data.datasets[0].data.length > 20) {
                     memoryChart.data.datasets[0].data.shift();
                 }
-                memoryChart.update();
+                memoryChart.update('none');
                 
                 // Update Disk Chart
                 diskChart.data.datasets[0].data = [data.disk_usage, 100 - data.disk_usage];
-                diskChart.update();
+                diskChart.update('none');
                 
                 // Update Network Chart
                 const netSentKb = data.network_sent_mb * 1024;
@@ -318,7 +301,7 @@
                     networkChart.data.datasets[0].data.shift();
                     networkChart.data.datasets[1].data.shift();
                 }
-                networkChart.update();
+                networkChart.update('none');
                 
                 // Update Process Table
                 updateProcessTable(data.top_processes);
@@ -363,14 +346,10 @@
             });
         }
         
-        // Initialize the page
         document.addEventListener('DOMContentLoaded', function() {
-            console.log('System page initialized');
             initializeCharts();
             updateSystemInfo();
             updateSystemData();
-            
-            // Update stats every 2 seconds (which updates charts and process table)
             setInterval(updateSystemData, 2000);
         });
     </script>

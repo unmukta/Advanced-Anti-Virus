@@ -1,155 +1,205 @@
-import logging
-import json
-from datetime import datetime
-from pathlib import Path
-from typing import Dict, Any
+# core/logger.py
 import psutil
 import time
+import json
+from datetime import datetime
+import threading
+import socket
+import platform
+import os
+from pathlib import Path
 
-class ComprehensiveLogger:
-    def __init__(self):
-        import os
-        self.log_dir = Path(os.getenv("DLP_LOG_DIR", "./logs"))
-        self.log_dir.mkdir(parents=True, exist_ok=True)
+class AuditLogger:
+    def __init__(self, log_dir="audit_logs_history"):
+        self.log_dir = Path(log_dir)
+        self.log_dir.mkdir(exist_ok=True)
+        self.running = False
+        self.monitor_thread = None
+        self.current_log_file = None
+        self._create_new_log_file()
         
-        # Set up comprehensive logging
-        logging.basicConfig(
-            level=logging.INFO,
-            format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-            handlers=[
-                logging.FileHandler(self.log_dir / 'dlp_system.log'),
-                logging.StreamHandler()
-            ]
-        )
-        self.logger = logging.getLogger('DLPEnterprise')
+        # Track previous states
+        self.previous_processes = set(p.pid for p in psutil.process_iter())
+        self.previous_connections = set()
         
-        # Application tracking
-        self.app_log = self.log_dir / 'applications.log'
-        self.system_log = self.log_dir / 'system.log'
-        self.network_log = self.log_dir / 'network.log'
-        self.security_log = self.log_dir / 'security.log'
-        self.audit_log = self.log_dir / 'audit.log'
+        print("AuditLogger initialized")
+    
+    def _create_new_log_file(self):
+        """Create a new log file with timestamp"""
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        self.current_log_file = self.log_dir / f"audit_log_{timestamp}.txt"
         
-        # Track running processes
-        self.running_processes = {}
+        # Write header to the new log file
+        with open(self.current_log_file, 'w') as f:
+            f.write(f"UbiquiShield Audit Log - Started at {datetime.now().isoformat()}\n")
+            f.write("=" * 80 + "\n\n")
+        
+        print(f"Created new log file: {self.current_log_file}")
     
-    def log_application(self, app_name: str, action: str, details: Dict[str, Any]):
-        """Log application events"""
-        entry = {
-            'timestamp': datetime.now().isoformat(),
-            'type': 'application',
-            'application': app_name,
-            'action': action,
-            'details': details
-        }
-        self._write_log(self.app_log, entry)
-        self.logger.info(f"Application {app_name} {action}: {json.dumps(details)}")
-    
-    def log_system(self, component: str, event_type: str, details: Dict[str, Any]):
-        """Log system events"""
-        entry = {
-            'timestamp': datetime.now().isoformat(),
-            'type': 'system',
-            'component': component,
-            'event_type': event_type,
-            'details': details
-        }
-        self._write_log(self.system_log, entry)
-        self.logger.info(f"System {component} {event_type}: {json.dumps(details)}")
-    
-    def log_network(self, event_type: str, source: str, destination: str, details: Dict[str, Any]):
-        """Log network events"""
-        entry = {
-            'timestamp': datetime.now().isoformat(),
-            'type': 'network',
-            'event_type': event_type,
-            'source': source,
-            'destination': destination,
-            'details': details
-        }
-        self._write_log(self.network_log, entry)
-        self.logger.info(f"Network {event_type} from {source} to {destination}: {json.dumps(details)}")
-    
-    def log_security(self, threat_level: str, event_type: str, details: Dict[str, Any]):
-        """Log security events"""
-        entry = {
-            'timestamp': datetime.now().isoformat(),
-            'type': 'security',
-            'threat_level': threat_level,
-            'event_type': event_type,
-            'details': details
-        }
-        self._write_log(self.security_log, entry)
-        self.logger.info(f"Security {threat_level} {event_type}: {json.dumps(details)}")
-    
-    def log_audit(self, user: str, action: str, details: Dict[str, Any]):
-        """Log audit events - everything gets logged here"""
-        entry = {
-            'timestamp': datetime.now().isoformat(),
-            'type': 'audit',
-            'user': user,
-            'action': action,
-            'details': details
-        }
-        self._write_log(self.audit_log, entry)
-        self.logger.info(f"Audit {user} {action}: {json.dumps(details)}")
-    
-    def _write_log(self, log_file: Path, entry: Dict[str, Any]):
-        """Write log entry to file"""
+    def log_event(self, event_type, event_data):
+        """Log an event with timestamp and details"""
         try:
-            with open(log_file, 'a', encoding='utf-8') as f:
-                f.write(json.dumps(entry) + '\n')
+            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            log_entry = f"[{timestamp}] {event_type.upper()}: {json.dumps(event_data)}\n"
+            
+            # Append to current log file
+            with open(self.current_log_file, 'a') as f:
+                f.write(log_entry)
+            
+            print(f"Logged event: {event_type}")
+            return True
         except Exception as e:
-            self.logger.error(f"Failed to write to log file {log_file}: {e}")
+            print(f"Error logging event: {e}")
+            return False
     
-    def track_processes(self):
-        """Track all running processes and log changes"""
-        current_processes = {p.pid: p.name() for p in psutil.process_iter(['name'])}
+    def monitor_system_activities(self):
+        """Continuously monitor and log system activities"""
+        print("System activity monitoring started")
         
-        # Check for new processes
-        for pid, name in current_processes.items():
-            if pid not in self.running_processes:
-                self.log_application(
-                    name, 
-                    'started', 
-                    {'pid': pid, 'name': name, 'timestamp': datetime.now().isoformat()}
-                )
-                self.log_audit(
-                    'system',
-                    'process_started',
-                    {'pid': pid, 'process_name': name}
-                )
-        
-        # Check for stopped processes
-        for pid, name in self.running_processes.items():
-            if pid not in current_processes:
-                self.log_application(
-                    name,
-                    'stopped',
-                    {'pid': pid, 'name': name, 'timestamp': datetime.now().isoformat()}
-                )
-                self.log_audit(
-                    'system',
-                    'process_stopped',
-                    {'pid': pid, 'process_name': name}
-                )
-        
-        self.running_processes = current_processes
+        while self.running:
+            try:
+                # Monitor process activity
+                current_processes = set()
+                for proc in psutil.process_iter(['pid', 'name', 'username']):
+                    try:
+                        proc_info = proc.info
+                        pid = proc_info['pid']
+                        current_processes.add(pid)
+                        
+                        # Log new processes
+                        if pid not in self.previous_processes:
+                            self.log_event('process', {
+                                'action': 'started',
+                                'pid': pid,
+                                'name': proc_info['name'],
+                                'username': proc_info['username']
+                            })
+                    
+                    except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+                        pass
+                
+                # Log terminated processes
+                for pid in self.previous_processes - current_processes:
+                    self.log_event('process', {
+                        'action': 'terminated',
+                        'pid': pid
+                    })
+                
+                self.previous_processes = current_processes
+                
+                # Monitor network connections
+                current_connections = set()
+                for conn in psutil.net_connections(kind='inet'):
+                    if conn.laddr:
+                        conn_id = f"{conn.laddr.ip}:{conn.laddr.port}"
+                        if conn.raddr:
+                            conn_id += f"-{conn.raddr.ip}:{conn.raddr.port}"
+                        current_connections.add(conn_id)
+                        
+                        # Log new connections
+                        if conn_id not in self.previous_connections:
+                            try:
+                                process_name = psutil.Process(conn.pid).name() if conn.pid else 'N/A'
+                                self.log_event('network', {
+                                    'action': 'connection_established',
+                                    'local_address': f"{conn.laddr.ip}:{conn.laddr.port}",
+                                    'remote_address': f"{conn.raddr.ip}:{conn.raddr.port}" if conn.raddr else 'N/A',
+                                    'status': conn.status,
+                                    'pid': conn.pid,
+                                    'process_name': process_name
+                                })
+                            except (psutil.NoSuchProcess, psutil.AccessDenied):
+                                pass
+                
+                # Log closed connections
+                for conn_id in self.previous_connections - current_connections:
+                    self.log_event('network', {
+                        'action': 'connection_closed',
+                        'connection_id': conn_id
+                    })
+                
+                self.previous_connections = current_connections
+                
+                # Log system metrics periodically
+                self.log_event('system', {
+                    'cpu_percent': psutil.cpu_percent(),
+                    'memory_percent': psutil.virtual_memory().percent,
+                    'disk_percent': psutil.disk_usage('/').percent
+                })
+                
+                time.sleep(3)  # Check every 3 seconds
+                
+            except Exception as e:
+                print(f"Monitoring error: {e}")
+                time.sleep(10)  # Wait longer on error
     
-    def get_logs(self, log_type: str, limit: int = 1000):
-        """Retrieve logs of a specific type"""
-        log_file = self.log_dir / f'{log_type}.log'
-        logs = []
+    def get_current_logs(self, limit=1000):
+        """Get logs from the current log file"""
         try:
-            with open(log_file, 'r', encoding='utf-8') as f:
-                lines = f.readlines()
-                for line in lines[-limit:]:
-                    logs.append(json.loads(line.strip()))
-        except FileNotFoundError:
-            self.logger.warning(f"Log file {log_file} not found")
+            with open(self.current_log_file, 'r') as f:
+                logs = f.readlines()
+            
+            # Return the most recent logs, limited by the specified count
+            return logs[-limit:] if limit else logs
         except Exception as e:
-            self.logger.error(f"Failed to read log file {log_file}: {e}")
-        return logs
+            print(f"Error reading logs: {e}")
+            return []
+    
+    def start_monitoring(self):
+        """Start all monitoring threads"""
+        if self.running:
+            print("Audit logger is already running")
+            return
+        
+        self.running = True
+        
+        # Start monitoring thread
+        self.monitor_thread = threading.Thread(target=self.monitor_system_activities)
+        self.monitor_thread.daemon = True
+        self.monitor_thread.start()
+        
+        self.log_event('system', {
+            'event': 'audit_logger_started',
+            'hostname': socket.gethostname(),
+            'platform': platform.platform(),
+            'timestamp': datetime.now().isoformat()
+        })
+        
+        print("Audit logger monitoring started")
+    
+    def stop_monitoring(self):
+        """Stop all monitoring threads"""
+        self.running = False
+        
+        self.log_event('system', {
+            'event': 'audit_logger_stopped',
+            'timestamp': datetime.now().isoformat()
+        })
+        
+        print("Audit logger monitoring stopped")
 
-# Global logger instance
-logger = ComprehensiveLogger()
+    def clear_current_logs(self):
+        """Clear all entries in the current log file"""
+        try:
+            with open(self.current_log_file, 'w') as f:
+                f.write(f"UbiquiShield Audit Log - Started at {datetime.now().isoformat()}\n")
+                f.write("=" * 80 + "\n\n")
+            return True
+        except Exception as e:
+            print(f"Error clearing logs: {e}")
+            return False
+
+# Create a global instance
+audit_logger = AuditLogger()
+
+if __name__ == "__main__":
+    # Test the logger
+    logger = AuditLogger()
+    logger.start_monitoring()
+    
+    try:
+        # Keep the main thread alive
+        while True:
+            time.sleep(1)
+    except KeyboardInterrupt:
+        logger.stop_monitoring()

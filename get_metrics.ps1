@@ -1,7 +1,7 @@
-﻿# PowerShell script to integrate with Python system monitoring
+# PowerShell script to integrate with Python system monitoring
 $pythonScript = @"
-import system_stats
-metrics = system_stats.get_system_metrics()
+from core.monitor import get_system_metrics
+metrics = get_system_metrics()
 import json
 print(json.dumps(metrics))
 "@
