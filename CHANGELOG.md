@@ -29,3 +29,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Removed unused `alembic/` migration scripts and `alembic.ini` configuration.
 - Removed redundant `enterprise_venv/` virtual environment.
 - Deleted obsolete templates, scripts, and logs (`test_dlp_setup.py`, `create_blockchain_table.py`, `migrate_blockchain_data.py`, `network_pro.js`, etc.).
+
+## v0.6.0 2025-09-30
+
+## Highlights
+- New **Beta version** with full monitoring suite.
+- **Process Monitoring** – Track all running applications.
+- **Network Traffic Analysis** – Inspect connections and open ports.
+- **Audit Logs** – Record activities like delete, download, running apps, network events.
+- Export **audit logs in .txt format** with timestamps.
+-  **task manager + network monitor + logging system** combined  
+
