@@ -9,14 +9,14 @@
 UbiquiShield is designed to run **strictly locally** on your computer.
 
 1. **No External Transmission**: 
-   All data collected by the monitoring suite (such as running processes, CPU/RAM usage, open network ports, active connection sockets, and network events) is processed strictly in-memory or written to local log files on your hard drive. 
-   **None of this information is transmitted over the internet or sent to external servers.**
+   All data collected by the monitoring suite (such as running processes, CPU/RAM usage, open network ports, active connection sockets, and network events) is processed strictly in-memory. 
+   **None of this information is transmitted over the internet or written to your local disk.**
 
 2. **AI Playground Privacy**:
-   The AI Content Scanner Playground analyses text input entirely on your local machine using standard regex pattern rules. No external APIs or web services are called to perform these analyses.
+   The AI Content Scanner Playground analyses text input entirely on your local machine using standard pattern rules. No external APIs or web services are called to perform these analyses.
 
 3. **Audit Log Storage**:
-   Your audit reports are stored as simple text files in the `audit_logs_history/` directory in the root of the project. You have complete ownership and control over these files and can delete them at any time.
+   Your audit logs are stored strictly in-memory (volatile storage) and are cleared automatically when the server is restarted. You can export these logs to a text file manually using the "Export Logs" action in the dashboard, which downloads the logs directly to your browser without persisting any files on the server disk.
 
 ---
 

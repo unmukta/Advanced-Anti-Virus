@@ -1,3 +1,4 @@
+# backend/core/logger.py
 import psutil
 import time
 import json
@@ -5,47 +6,33 @@ from datetime import datetime
 import threading
 import socket
 import platform
-import os
-from pathlib import Path
 
 class AuditLogger:
-    def __init__(self, log_dir="audit_logs_history"):
-        self.log_dir = Path(log_dir)
-        self.log_dir.mkdir(exist_ok=True)
+    def __init__(self, max_entries=5000):
+        self.logs = []
+        self.max_entries = max_entries
         self.running = False
         self.monitor_thread = None
-        self.current_log_file = None
-        self._create_new_log_file()
         
-        # Track previous states
+        # Track previous states for diff monitoring
         self.previous_processes = set(p.pid for p in psutil.process_iter())
         self.previous_connections = set()
         
-        print("AuditLogger initialized")
-    
-    def _create_new_log_file(self):
-        """Create a new log file with timestamp"""
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        self.current_log_file = self.log_dir / f"audit_log_{timestamp}.txt"
-        
-        # Write header to the new log file
-        with open(self.current_log_file, 'w') as f:
-            f.write(f"DLP Enterprise Audit Log - Started at {datetime.now().isoformat()}\n")
-            f.write("=" * 80 + "\n\n")
-        
-        print(f"Created new log file: {self.current_log_file}")
+        print("AuditLogger initialized in-memory")
     
     def log_event(self, event_type, event_data):
-        """Log an event with timestamp and details"""
+        """Log an event to the in-memory list"""
         try:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             log_entry = f"[{timestamp}] {event_type.upper()}: {json.dumps(event_data)}\n"
             
-            # Append to current log file
-            with open(self.current_log_file, 'a') as f:
-                f.write(log_entry)
+            self.logs.append(log_entry)
             
-            print(f"Logged event: {event_type}")
+            # Prevent memory leaks by capping the list size
+            if len(self.logs) > self.max_entries:
+                self.logs.pop(0)
+                
+            print(f"Logged event (in-memory): {event_type}")
             return True
         except Exception as e:
             print(f"Error logging event: {e}")
@@ -133,16 +120,8 @@ class AuditLogger:
                 time.sleep(10)  # Wait longer on error
     
     def get_current_logs(self, limit=1000):
-        """Get logs from the current log file"""
-        try:
-            with open(self.current_log_file, 'r') as f:
-                logs = f.readlines()
-            
-            # Return the most recent logs, limited by the specified count
-            return logs[-limit:] if limit else logs
-        except Exception as e:
-            print(f"Error reading logs: {e}")
-            return []
+        """Get logs from the in-memory array"""
+        return self.logs[-limit:] if limit else list(self.logs)
     
     def start_monitoring(self):
         """Start all monitoring threads"""
@@ -178,11 +157,13 @@ class AuditLogger:
         print("Audit logger monitoring stopped")
 
     def clear_current_logs(self):
-        """Clear all entries in the current log file"""
+        """Clear all entries in the in-memory logs"""
         try:
-            with open(self.current_log_file, 'w') as f:
-                f.write(f"DLP Enterprise Audit Log - Started at {datetime.now().isoformat()}\n")
-                f.write("=" * 80 + "\n\n")
+            self.logs.clear()
+            self.log_event('system', {
+                'event': 'audit_logs_cleared',
+                'timestamp': datetime.now().isoformat()
+            })
             return True
         except Exception as e:
             print(f"Error clearing logs: {e}")
@@ -190,15 +171,3 @@ class AuditLogger:
 
 # Create a global instance
 audit_logger = AuditLogger()
-
-if __name__ == "__main__":
-    # Test the logger
-    logger = AuditLogger()
-    logger.start_monitoring()
-    
-    try:
-        # Keep the main thread alive
-        while True:
-            time.sleep(1)
-    except KeyboardInterrupt:
-        logger.stop_monitoring()

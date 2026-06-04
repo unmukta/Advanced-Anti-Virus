@@ -1,7 +1,7 @@
-# main.py
+# backend/main.py
 # pyrefly: ignore [missing-import]
 from fastapi import FastAPI, Request, HTTPException
-from fastapi.responses import HTMLResponse, JSONResponse, FileResponse
+from fastapi.responses import HTMLResponse, JSONResponse, Response
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
@@ -10,10 +10,14 @@ from datetime import datetime
 import psutil
 import random
 import os
+import sys
 import time
 import socket
 import platform
 import json
+
+# Ensure backend directory is in path so absolute/relative imports resolve correctly
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Import system stats monitor and audit logger
 from core.monitor import SystemMonitor
@@ -39,9 +43,15 @@ app = FastAPI(
     lifespan=lifespan
 )
 
+# Resolve absolute paths to frontend assets
+backend_dir = os.path.dirname(os.path.abspath(__file__))
+frontend_dir = os.path.abspath(os.path.join(backend_dir, "..", "frontend"))
+static_dir = os.path.join(frontend_dir, "static")
+templates_dir = os.path.join(frontend_dir, "templates")
+
 # Mount static files and templates
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
+app.mount("/static", StaticFiles(directory=static_dir), name="static")
+templates = Jinja2Templates(directory=templates_dir)
 templates.env.cache = None
 
 # Add CORS middleware
@@ -279,10 +289,6 @@ async def network_scan(target: str = "192.168.1.0/24", scan_type: str = "quick",
         
         scan_log = f"Network scan completed: {len(results)} hosts found ({sum(1 for host in results if host['status'] == 'up')} up)"
         
-        # Save to log file
-        with open("network_scan_log.txt", "a") as f:
-            f.write(f"{datetime.now().isoformat()} - {scan_log}\n")
-            
         # Log to audit logger
         audit_logger.log_event('network', {
             'action': 'network_scan',
@@ -312,38 +318,11 @@ async def network_scan(target: str = "192.168.1.0/24", scan_type: str = "quick",
     except Exception as e:
         return {"error": f"Scan failed: {str(e)}"}
 
-@app.get("/api/network/scan/logs")
-async def get_network_scan_logs(limit: int = 50):
-    try:
-        if os.path.exists("network_scan_log.txt"):
-            with open("network_scan_log.txt", "r") as f:
-                logs = f.readlines()
-            return {"logs": logs[-limit:]}
-        return {"logs": []}
-    except Exception as e:
-        return {"error": f"Failed to get logs: {str(e)}"}
-
-@app.get("/api/network/scan/export")
-async def export_network_scan_logs():
-    try:
-        if not os.path.exists("scan_exports"):
-            os.makedirs("scan_exports")
-        filename = f"scan_exports/network_scan_logs_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
-        
-        if os.path.exists("network_scan_log.txt"):
-            with open("network_scan_log.txt", "r") as source:
-                with open(filename, "w") as target:
-                    target.writelines(source.readlines())
-        
-        return {"status": "exported", "filename": filename}
-    except Exception as e:
-        return {"error": f"Export failed: {str(e)}"}
-
 # --- AUDIT LOGS ---
 
 @app.get("/api/audit/logs")
 async def get_audit_logs():
-    """Get logs from the current audit log file"""
+    """Get logs from the in-memory array"""
     try:
         return audit_logger.get_current_logs(limit=200)
     except Exception as e:
@@ -351,7 +330,7 @@ async def get_audit_logs():
 
 @app.delete("/api/audit/logs")
 async def clear_audit_logs():
-    """Clear/truncate the current active audit log file"""
+    """Clear the in-memory audit log array"""
     try:
         success = audit_logger.clear_current_logs()
         if success:
@@ -362,16 +341,23 @@ async def clear_audit_logs():
 
 @app.get("/api/audit/export")
 async def export_audit_logs():
-    """Export the active audit log file as a downloadable file"""
+    """Export the in-memory audit logs as a downloadable file dynamically"""
     try:
-        log_file = audit_logger.current_log_file
-        if log_file and os.path.exists(log_file):
-            return FileResponse(
-                log_file, 
-                media_type="text/plain", 
-                filename=f"ubiquishield_audit_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
-            )
-        raise HTTPException(status_code=404, detail="Active log file not found")
+        logs = audit_logger.get_current_logs(limit=None)
+        log_content = "".join(logs)
+        
+        if not log_content:
+            log_content = "UbiquiShield Audit Log - Started at " + datetime.now().isoformat() + "\n================================================================================\n\nNo activities logged yet."
+            
+        filename = f"ubiquishield_audit_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+        
+        return Response(
+            content=log_content,
+            media_type="text/plain",
+            headers={
+                "Content-Disposition": f"attachment; filename={filename}"
+            }
+        )
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to export audit logs: {str(e)}")
 
@@ -379,7 +365,7 @@ async def export_audit_logs():
 
 @app.get("/api/v1/ai/status")
 async def get_ai_status():
-    """Get AI content policy engine status"""
+    """Get AI content policy status"""
     return {
         "status": "active",
         "version": "ubiquishield_v1",
@@ -388,7 +374,7 @@ async def get_ai_status():
 
 @app.post("/api/v1/ai/analyze")
 async def analyze_content(content: dict):
-    """Analyze text for sensitive data leakage and log alert if flagged"""
+    """Analyze text for sensitive threat patterns and log alert if flagged"""
     try:
         text = content.get('text', '').lower()
         risk_score = 0
@@ -429,7 +415,7 @@ async def analyze_content(content: dict):
 
 @app.get("/api/threats")
 async def get_threats():
-    """Get aggregated threat alerts parsed from actual audit logs"""
+    """Get aggregated threat alerts parsed from actual in-memory audit logs"""
     try:
         threats = []
         logs = audit_logger.get_current_logs(limit=500)
@@ -479,7 +465,3 @@ async def get_threats():
         return {"threats": threats}
     except Exception as e:
         return {"threats": []}
-
-if __name__ == "__main__":
-    import uvicorn
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)

@@ -136,7 +136,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Function to update dashboard data
         async function updateDashboardData() {
             try {
                 const response = await fetch('/api/system/metrics');
@@ -155,25 +154,20 @@
                 const diskUsage = data.disk_usage !== undefined ? data.disk_usage : 0;
                 const networkTraffic = data.network_traffic !== undefined ? data.network_traffic : 0;
                 
-                // Update metrics display with real data
                 document.getElementById('cpu-usage').textContent = cpuUsage.toFixed(1) + '%';
                 document.getElementById('memory-usage').textContent = memoryUsage.toFixed(1) + '%';
                 document.getElementById('disk-usage').textContent = diskUsage.toFixed(1) + '%';
                 
-                // Convert network traffic from KB/s to MB/s and display
                 const networkMB = networkTraffic / 1024;
                 document.getElementById('network-traffic').textContent = networkMB.toFixed(1) + ' MB/s';
                 
-                // Update progress bars
                 document.getElementById('cpu-progress').style.width = cpuUsage + '%';
                 document.getElementById('memory-progress').style.width = memoryUsage + '%';
                 document.getElementById('disk-progress').style.width = diskUsage + '%';
                 
-                // Update network progress bar (scaled to show meaningful values)
                 const networkPercent = Math.min(networkMB * 5, 100);
                 document.getElementById('network-progress').style.width = networkPercent + '%';
                 
-                // Update progress bar colors
                 updateProgressBarColor('cpu-progress', cpuUsage);
                 updateProgressBarColor('memory-progress', memoryUsage);
                 updateProgressBarColor('disk-progress', diskUsage);
@@ -189,20 +183,18 @@
             }
         }
 
-        // Function to update progress bar colors
         function updateProgressBarColor(elementId, value) {
             const element = document.getElementById(elementId);
-            element.className = 'progress-bar'; // Reset class
+            element.className = 'progress-bar';
             if (value < 50) {
-                element.style.backgroundColor = '#10b981'; // Green (accent-teal)
+                element.style.backgroundColor = '#10b981';
             } else if (value < 80) {
-                element.style.backgroundColor = '#f59e0b'; // Orange (accent-orange)
+                element.style.backgroundColor = '#f59e0b';
             } else {
-                element.style.backgroundColor = '#ef4444'; // Red (accent-red)
+                element.style.backgroundColor = '#ef4444';
             }
         }
 
-        // Function to add log entries
         function addLogEntry(message) {
             const now = new Date();
             const timestamp = now.toLocaleTimeString();
@@ -212,29 +204,20 @@
             
             const logContainer = document.getElementById('activity-log');
             if (logContainer) {
-                // Add new entry at the top
                 logContainer.insertBefore(logEntry, logContainer.firstChild);
                 
-                // Limit to 10 entries
                 if (logContainer.children.length > 10) {
                     logContainer.removeChild(logContainer.lastChild);
                 }
             }
         }
 
-        // Initialize the dashboard
         function initDashboard() {
-            // Set up periodic updates
-            setInterval(updateDashboardData, 2000); // Update every 2 seconds
-            
-            // Initial update
+            setInterval(updateDashboardData, 2000);
             updateDashboardData();
-            
-            // Add initial log entry
             addLogEntry('Dashboard initialized');
         }
 
-        // Start the dashboard when the page loads
         document.addEventListener('DOMContentLoaded', initDashboard);
     </script>
 </body>

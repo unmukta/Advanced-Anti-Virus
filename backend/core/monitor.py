@@ -1,4 +1,4 @@
-# core/monitor.py
+# backend/core/monitor.py
 import psutil
 import time
 import json
@@ -154,8 +154,3 @@ def get_system_metrics():
     """
     monitor = SystemMonitor()
     return monitor.get_all_metrics()
-
-if __name__ == "__main__":
-    # If run directly, output JSON
-    metrics = get_system_metrics()
-    print(json.dumps(metrics, indent=2))

@@ -52,7 +52,7 @@
                             </div>
                             <div class="col-md-6 mb-2">
                                 <div class="alert alert-warning" style="background-color: rgba(245, 158, 11, 0.1); border-color: rgba(245, 158, 11, 0.2); color: var(--text-primary)">
-                                    <strong>Log Rotation:</strong> New audit logs are initialized periodically. Active logs are stored locally under `audit_logs_history/`.
+                                    <strong>In-Memory Logs:</strong> Audit logs are stored in-memory (up to 5,000 entries) and cleared on server restart. Use "Export Logs" to save them locally.
                                 </div>
                             </div>
                         </div>
@@ -120,7 +120,6 @@
                     return;
                 }
                 
-                // Display logs in reverse chronological order (newest first)
                 logs.reverse().forEach(logText => {
                     const logElement = document.createElement('div');
                     logElement.innerHTML = formatLogEntry(logText);
