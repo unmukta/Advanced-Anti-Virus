@@ -283,6 +283,59 @@
             }
         }
 
+        async function fetchNetworkEvents() {
+            try {
+                const response = await fetch('/api/audit/logs?limit=100');
+                if (!response.ok) throw new Error('API failed');
+                const logs = await response.json();
+                
+                const logElement = document.getElementById('network-events');
+                if (!logElement) return;
+                
+                const networkLogs = logs.filter(logText => logText.includes('NETWORK:'));
+                
+                logElement.innerHTML = '';
+                
+                if (networkLogs.length === 0) {
+                    logElement.innerHTML = '<div class="log-entry"><span class="log-time">[System]</span> <span class="log-info">No active network events monitored.</span></div>';
+                    return;
+                }
+                
+                networkLogs.reverse().slice(0, 15).forEach(logText => {
+                    const timestampMatch = logText.match(/\[(.*?)\]/);
+                    const jsonMatch = logText.match(/\{.*\}/s);
+                    
+                    if (!timestampMatch) return;
+                    
+                    const timestamp = timestampMatch[1].split(' ')[1] || timestampMatch[1];
+                    let data = jsonMatch ? JSON.parse(jsonMatch[0]) : {};
+                    
+                    let message = '';
+                    let level = 'info';
+                    
+                    if (data.action === 'connection_established') {
+                        message = `Connection established: ${data.process_name || 'PID ' + data.pid} -> ${data.remote_address}`;
+                        level = 'success';
+                    } else if (data.action === 'connection_closed') {
+                        message = `Connection closed: ${data.connection_id}`;
+                        level = 'warning';
+                    } else if (data.action === 'network_scan') {
+                        message = `Network scan run on target ${data.target} (${data.hosts_found} hosts found)`;
+                        level = 'primary';
+                    } else {
+                        message = logText;
+                    }
+                    
+                    const logEntry = document.createElement('div');
+                    logEntry.className = 'log-entry';
+                    logEntry.innerHTML = `<span class="log-time">[${timestamp}]</span> <span class="log-${level}">${message}</span>`;
+                    logElement.appendChild(logEntry);
+                });
+            } catch (error) {
+                console.error('Error fetching network events:', error);
+            }
+        }
+
         function addNetworkEvent(level, message) {
             const logElement = document.getElementById('network-events');
             if (!logElement) return;
@@ -292,16 +345,18 @@
             logEntry.className = 'log-entry';
             logEntry.innerHTML = '<span class="log-time">[' + time + ']</span> <span class="log-' + level + '">' + message + '</span>';
 
-            logElement.appendChild(logEntry);
+            logElement.insertBefore(logEntry, logElement.firstChild);
 
             if (logElement.children.length > 50) {
-                logElement.removeChild(logElement.firstChild);
+                logElement.removeChild(logElement.lastChild);
             }
         }
 
         document.addEventListener('DOMContentLoaded', function() {
             initializeNetworkChart();
             setInterval(updateNetworkChart, 2000);
+            setInterval(fetchNetworkEvents, 3000);
+            fetchNetworkEvents();
         });
     </script>
 </body>

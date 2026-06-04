@@ -13,6 +13,8 @@ class AuditLogger:
         self.max_entries = max_entries
         self.running = False
         self.monitor_thread = None
+        self.network_monitoring_enabled = True
+        self.access_denied_warning_shown = False
         
         # Track previous states for diff monitoring
         self.previous_processes = set(p.pid for p in psutil.process_iter())
@@ -75,40 +77,47 @@ class AuditLogger:
                 
                 # Monitor network connections
                 current_connections = set()
-                for conn in psutil.net_connections(kind='inet'):
-                    if conn.laddr:
-                        conn_id = f"{conn.laddr.ip}:{conn.laddr.port}"
-                        if conn.raddr:
-                            conn_id += f"-{conn.raddr.ip}:{conn.raddr.port}"
-                        current_connections.add(conn_id)
+                if self.network_monitoring_enabled:
+                    try:
+                        for conn in psutil.net_connections(kind='inet'):
+                            if conn.laddr:
+                                conn_id = f"{conn.laddr.ip}:{conn.laddr.port}"
+                                if conn.raddr:
+                                    conn_id += f"-{conn.raddr.ip}:{conn.raddr.port}"
+                                current_connections.add(conn_id)
+                                
+                                # Log new connections
+                                if conn_id not in self.previous_connections:
+                                    try:
+                                        process_name = psutil.Process(conn.pid).name() if conn.pid else 'N/A'
+                                        self.log_event('network', {
+                                            'action': 'connection_established',
+                                            'local_address': f"{conn.laddr.ip}:{conn.laddr.port}",
+                                            'remote_address': f"{conn.raddr.ip}:{conn.raddr.port}" if conn.raddr else 'N/A',
+                                            'status': conn.status,
+                                            'pid': conn.pid,
+                                            'process_name': process_name
+                                        })
+                                    except (psutil.NoSuchProcess, psutil.AccessDenied):
+                                        pass
                         
-                        # Log new connections
-                        if conn_id not in self.previous_connections:
-                            try:
-                                process_name = psutil.Process(conn.pid).name() if conn.pid else 'N/A'
-                                self.log_event('network', {
-                                    'action': 'connection_established',
-                                    'local_address': f"{conn.laddr.ip}:{conn.laddr.port}",
-                                    'remote_address': f"{conn.raddr.ip}:{conn.raddr.port}" if conn.raddr else 'N/A',
-                                    'status': conn.status,
-                                    'pid': conn.pid,
-                                    'process_name': process_name
-                                })
-                            except (psutil.NoSuchProcess, psutil.AccessDenied):
-                                pass
+                        # Log closed connections
+                        for conn_id in self.previous_connections - current_connections:
+                            self.log_event('network', {
+                                'action': 'connection_closed',
+                                'connection_id': conn_id
+                            })
+                        
+                        self.previous_connections = current_connections
+                    except psutil.AccessDenied:
+                        self.network_monitoring_enabled = False
+                        if not self.access_denied_warning_shown:
+                            print("AccessDenied warning: Network connection monitoring disabled because the process does not have administrator privileges.")
+                            self.access_denied_warning_shown = True
                 
-                # Log closed connections
-                for conn_id in self.previous_connections - current_connections:
-                    self.log_event('network', {
-                        'action': 'connection_closed',
-                        'connection_id': conn_id
-                    })
-                
-                self.previous_connections = current_connections
-                
-                # Log system metrics periodically
+                # Log system metrics periodically (isolate CPU query with small interval)
                 self.log_event('system', {
-                    'cpu_percent': psutil.cpu_percent(),
+                    'cpu_percent': psutil.cpu_percent(interval=0.1),
                     'memory_percent': psutil.virtual_memory().percent,
                     'disk_percent': psutil.disk_usage('/').percent
                 })

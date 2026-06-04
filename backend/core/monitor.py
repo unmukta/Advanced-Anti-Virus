@@ -28,9 +28,9 @@ class SystemMonitor:
     def _update_baseline_readings(self):
         """Initialize with baseline readings to avoid spikes on first measurement."""
         # CPU baseline
-        self.cpu_readings.append(psutil.cpu_percent(interval=0.1))
+        psutil.cpu_percent(interval=None)
         time.sleep(0.1)
-        self.cpu_readings.append(psutil.cpu_percent(interval=0.1))
+        self.cpu_readings.append(psutil.cpu_percent(interval=None))
         
         # Memory baseline
         self.memory_readings.append(psutil.virtual_memory().percent)
@@ -56,7 +56,7 @@ class SystemMonitor:
         """
         Get smoothed CPU usage percentage.
         """
-        cpu_percent = psutil.cpu_percent(interval=0.5)
+        cpu_percent = psutil.cpu_percent(interval=None)
         return self._smooth_value(self.cpu_readings, cpu_percent)
     
     def get_memory_usage(self):
@@ -135,7 +135,7 @@ class SystemMonitor:
         memory_usage = self.get_memory_usage()
         disk_usage = self.get_disk_usage()
         net_sent, net_recv = self.get_network_usage()
-        top_processes = self.get_top_processes()
+        top_processes = self.get_top_processes(count=50)
         
         return {
             'cpu_usage': round(cpu_usage, 1),

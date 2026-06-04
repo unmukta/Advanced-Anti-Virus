@@ -91,11 +91,21 @@
                 </div>
             </div>
         </div>
-        
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                    <div class="card-header"><i class="fas fa-tasks me-2"></i> Active Processes</div>
+                    <div class="card-header d-flex justify-content-between align-items-center flex-wrap gap-2">
+                        <span><i class="fas fa-tasks me-2"></i> Active Processes</span>
+                        <div class="d-flex align-items-center gap-2">
+                            <input type="text" id="processSearch" class="form-control form-control-sm" placeholder="Search processes..." style="width: 180px; background-color: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-glass);">
+                            <select id="processSort" class="form-select form-select-sm" style="width: 130px; background-color: var(--bg-card); color: var(--text-primary); border: 1px solid var(--border-glass);">
+                                <option value="cpu">Sort by CPU</option>
+                                <option value="memory">Sort by RAM</option>
+                                <option value="pid">Sort by PID</option>
+                                <option value="name">Sort by Name</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="card-body p-0">
                         <div class="table-responsive">
                             <table class="table table-striped" id="processes-table">
@@ -266,6 +276,8 @@
             });
         }
         
+        let allProcesses = [];
+
         async function updateSystemData() {
             try {
                 const response = await fetch('/api/system/metrics');
@@ -302,8 +314,9 @@
                 }
                 networkChart.update('none');
                 
-                // Update Process Table
-                updateProcessTable(data.top_processes);
+                // Update Processes List
+                allProcesses = data.top_processes || [];
+                renderProcessTable();
             } catch (error) {
                 console.error('Error fetching metrics:', error);
             }
@@ -323,16 +336,31 @@
             }
         }
         
-        function updateProcessTable(processes) {
+        function renderProcessTable() {
             const tableBody = document.getElementById('processes-table').querySelector('tbody');
             tableBody.innerHTML = '';
             
-            if (!processes || processes.length === 0) {
-                tableBody.innerHTML = '<tr><td colspan="5" class="text-center">No running processes monitored</td></tr>';
+            const searchQuery = document.getElementById('processSearch').value.toLowerCase();
+            const sortBy = document.getElementById('processSort').value;
+            
+            // Filter locally
+            let filtered = allProcesses.filter(p => p.name.toLowerCase().includes(searchQuery));
+            
+            // Sort locally
+            filtered.sort((a, b) => {
+                if (sortBy === 'cpu') return b.cpu_percent - a.cpu_percent;
+                if (sortBy === 'memory') return b.memory_percent - a.memory_percent;
+                if (sortBy === 'pid') return a.pid - b.pid;
+                if (sortBy === 'name') return a.name.localeCompare(b.name);
+                return 0;
+            });
+            
+            if (filtered.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="5" class="text-center">No matching processes found</td></tr>';
                 return;
             }
             
-            processes.forEach(process => {
+            filtered.forEach(process => {
                 const row = document.createElement('tr');
                 row.innerHTML = `
                     <td>${process.pid}</td>
@@ -350,6 +378,10 @@
             updateSystemInfo();
             updateSystemData();
             setInterval(updateSystemData, 2000);
+            
+            // Listeners for real-time search & sort
+            document.getElementById('processSearch').addEventListener('input', renderProcessTable);
+            document.getElementById('processSort').addEventListener('change', renderProcessTable);
         });
     </script>
 </body>

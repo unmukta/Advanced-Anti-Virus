@@ -39,7 +39,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(
     title="UbiquiShield",
     description="Ubiquitous Real-Time System Monitoring & Security Suite",
-    version="1.0.0",
+    version="0.7.0",
     lifespan=lifespan
 )
 

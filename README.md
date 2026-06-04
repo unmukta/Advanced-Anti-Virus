@@ -1,4 +1,4 @@
-# UbiquiShield 🛡️
+# UbiquiShield 🛡️ (v0.7.0)
 
 **UbiquiShield** is a premium, lightweight, real-time system monitoring and network analysis security suite for your PC. It provides glassmorphic visualizations of system metrics, active processes, and network events, alongside an AI-driven text filtering dashboard and comprehensive audit logger.
 
@@ -20,22 +20,25 @@ All monitoring data and scanning operations are run **strictly locally** on your
 ## 📂 Project Structure
 
 ```text
-├── core/
-│   ├── logger.py           # Cleaned audit logging thread & log management
-│   └── monitor.py          # Resource metric tracker & process listing
-├── static/
-│   └── style.css           # Custom dark-mode glassmorphic style system
-├── templates/
-│   ├── audit.html          # Audit log console webpage
-│   ├── network.html        # Network throughput & scanner page
-│   ├── overview.html       # Main system overview dashboard
-│   ├── system.html         # Performance metrics & process monitor
-│   └── threats.html        # Threat center and AI playground
-├── main.py                 # FastAPI server & route handlers
-├── run_server.py           # Server runner (uvicorn startup script)
-├── get_metrics.ps1         # PowerShell system stats utility
+├── backend/
+│   ├── core/
+│   │   ├── logger.py       # In-memory audit logging thread & log management
+│   │   └── monitor.py      # Non-blocking resource metric tracker
+│   ├── main.py             # FastAPI server & route handlers
+│   └── run_server.py       # Server runner (uvicorn startup script)
+├── frontend/
+│   ├── static/
+│   │   └── style.css       # Brave-style dark-mode matte style system
+│   └── templates/
+│       ├── audit.html      # Audit log console webpage
+│       ├── network.html    # Network throughput & scanner page
+│       ├── overview.html   # Main system overview dashboard
+│       ├── system.html     # Performance metrics & process monitor
+│       └── threats.html    # Threat center and AI playground
 ├── requirements.txt        # Minimum Python dependencies list
 ├── LICENSE                 # MIT License file
+├── PRIVACY.md              # Offline local-only operations privacy policy
+├── CHANGELOG.md            # Version and changes tracking file
 └── README.md               # Project documentation
 ```
 

@@ -173,13 +173,8 @@
                 updateProgressBarColor('disk-progress', diskUsage);
                 updateProgressBarColor('network-progress', networkPercent);
                 
-                const now = new Date();
-                const timestamp = now.toLocaleTimeString();
-                addLogEntry('System metrics updated successfully');
-                
             } catch (error) {
                 console.error('Error updating dashboard:', error);
-                addLogEntry('Error updating dashboard: ' + error.message);
             }
         }
 
@@ -195,27 +190,83 @@
             }
         }
 
-        function addLogEntry(message) {
-            const now = new Date();
-            const timestamp = now.toLocaleTimeString();
-            const logEntry = document.createElement('div');
-            logEntry.className = 'log-entry';
-            logEntry.innerHTML = '<span class="log-time">[' + timestamp + ']</span> <span class="log-info">' + message + '</span>';
-            
-            const logContainer = document.getElementById('activity-log');
-            if (logContainer) {
-                logContainer.insertBefore(logEntry, logContainer.firstChild);
+        async function fetchRecentActivities() {
+            try {
+                const response = await fetch('/api/audit/logs?limit=25');
+                if (!response.ok) throw new Error('API failed');
+                const logs = await response.json();
                 
-                if (logContainer.children.length > 10) {
-                    logContainer.removeChild(logContainer.lastChild);
+                const logContainer = document.getElementById('activity-log');
+                if (!logContainer) return;
+                
+                logContainer.innerHTML = '';
+                
+                // Only show logs that are not system performance logs to avoid spam
+                const filteredLogs = logs.filter(logText => {
+                    return !logText.includes('"cpu_percent"');
+                });
+                
+                if (filteredLogs.length === 0) {
+                    logContainer.innerHTML = '<div class="log-entry"><span class="log-time">[System]</span> <span class="log-info">No recent activity logged.</span></div>';
+                    return;
                 }
+                
+                // Show most recent first (up to 8 logs)
+                filteredLogs.reverse().slice(0, 8).forEach(logText => {
+                    const timestampMatch = logText.match(/\[(.*?)\]/);
+                    const typeMatch = logText.match(/\] (\w+):/);
+                    const jsonMatch = logText.match(/\{.*\}/s);
+                    
+                    if (!timestampMatch || !typeMatch) {
+                        const logEntry = document.createElement('div');
+                        logEntry.className = 'log-entry';
+                        logEntry.innerHTML = '<span class="log-info">' + logText + '</span>';
+                        logContainer.appendChild(logEntry);
+                        return;
+                    }
+                    
+                    const timestamp = timestampMatch[1].split(' ')[1] || timestampMatch[1]; // Get HH:MM:SS
+                    const type = typeMatch[1];
+                    let data = jsonMatch ? JSON.parse(jsonMatch[0]) : {};
+                    
+                    let message = '';
+                    if (type === 'PROCESS') {
+                        message = `Process '${data.name}' (PID: ${data.pid}) ${data.action}`;
+                    } else if (type === 'NETWORK') {
+                        message = `Network ${data.action.replace(/_/g, ' ')}: ${data.process_name || 'PID ' + data.pid} -> ${data.remote_address || 'N/A'}`;
+                    } else if (type === 'SECURITY_ALERT') {
+                        message = `AI Threat Detected! Risk score ${data.risk_score}%`;
+                    } else if (type === 'SYSTEM') {
+                        if (data.event) {
+                            message = `System Event: ${data.event.replace(/_/g, ' ')}`;
+                        } else {
+                            message = `System metrics refreshed`;
+                        }
+                    } else {
+                        message = logText;
+                    }
+                    
+                    const logEntry = document.createElement('div');
+                    logEntry.className = 'log-entry';
+                    
+                    let colorClass = 'log-info';
+                    if (type === 'SECURITY_ALERT') colorClass = 'log-danger';
+                    else if (type === 'PROCESS') colorClass = 'log-warning';
+                    else if (type === 'NETWORK') colorClass = 'log-primary';
+                    
+                    logEntry.innerHTML = `<span class="log-time">[${timestamp}]</span> <span class="${colorClass}">${message}</span>`;
+                    logContainer.appendChild(logEntry);
+                });
+            } catch (error) {
+                console.error('Error fetching activities:', error);
             }
         }
 
         function initDashboard() {
             setInterval(updateDashboardData, 2000);
+            setInterval(fetchRecentActivities, 3000);
             updateDashboardData();
-            addLogEntry('Dashboard initialized');
+            fetchRecentActivities();
         }
 
         document.addEventListener('DOMContentLoaded', initDashboard);
