@@ -1,0 +1,5858 @@
+DLP Enterprise Audit Log - Started at 2026-06-04T09:15:13.473274
+================================================================================
+
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60099",
+  "remote_address": "127.0.0.1:60119",
+  "status": "ESTABLISHED",
+  "pid": 7892,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:1900",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:56976",
+  "remote_address": "13.89.179.14:443",
+  "status": "ESTABLISHED",
+  "pid": 24556,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 6860,
+  "process_name": "steamwebhelper.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60084",
+  "remote_address": "127.0.0.1:60094",
+  "status": "ESTABLISHED",
+  "pid": 9144,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 10280,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:53540",
+  "remote_address": "140.82.114.26:443",
+  "status": "ESTABLISHED",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62790",
+  "remote_address": "20.184.175.0:443",
+  "status": "ESTABLISHED",
+  "pid": 7652,
+  "process_name": "OneDrive.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:49675",
+  "remote_address": "127.0.0.1:9222",
+  "status": "ESTABLISHED",
+  "pid": 13456,
+  "process_name": "node.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62917",
+  "remote_address": "44.223.210.239:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11948,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53090",
+  "remote_address": "127.0.0.1:53086",
+  "status": "ESTABLISHED",
+  "pid": 18248,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59258",
+  "remote_address": "127.0.0.1:59532",
+  "status": "ESTABLISHED",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::7680",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:139",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 4,
+  "process_name": "System"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:52267",
+  "remote_address": "20.184.175.7:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:64443",
+  "remote_address": "155.133.224.23:27028",
+  "status": "ESTABLISHED",
+  "pid": 5108,
+  "process_name": "steam.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:63845",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:56781",
+  "remote_address": "2001:4860:4802:38::223:443",
+  "status": "ESTABLISHED",
+  "pid": 24584,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:138",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 4,
+  "process_name": "System"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "fe80::43db:b307:2e2e:f241:1900",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49666",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 2464,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:56361",
+  "remote_address": "2001:4860:4802:38::223:443",
+  "status": "ESTABLISHED",
+  "pid": 24104,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:55634",
+  "remote_address": "20.184.175.3:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:61995",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11948,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60091",
+  "remote_address": "127.0.0.1:60084",
+  "status": "ESTABLISHED",
+  "pid": 11900,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:62000",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59254",
+  "remote_address": "127.0.0.1:59532",
+  "status": "ESTABLISHED",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60095",
+  "remote_address": "127.0.0.1:60084",
+  "status": "ESTABLISHED",
+  "pid": 11900,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:51969",
+  "remote_address": "2001:4860:4802:38::223:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5355",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59532",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 24124,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60085",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 11900,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53055",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 24584,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:62006",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 24124,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:53062",
+  "remote_address": "34.54.84.110:443",
+  "status": "ESTABLISHED",
+  "pid": 24584,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::5355",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:54405",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53086",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 24584,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60112",
+  "remote_address": "127.0.0.1:60099",
+  "status": "ESTABLISHED",
+  "pid": 24104,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49668",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 4940,
+  "process_name": "spoolsv.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60104",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 24104,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:64433",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 5108,
+  "process_name": "steam.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:58242",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:63846",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59274",
+  "remote_address": "127.0.0.1:59534",
+  "status": "ESTABLISHED",
+  "pid": 24124,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60099",
+  "remote_address": "127.0.0.1:60111",
+  "status": "ESTABLISHED",
+  "pid": 7892,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5357",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 4,
+  "process_name": "System"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53068",
+  "remote_address": "127.0.0.1:53050",
+  "status": "ESTABLISHED",
+  "pid": 24584,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:49811",
+  "remote_address": "40.74.78.229:443",
+  "status": "CLOSE_WAIT",
+  "pid": 23108,
+  "process_name": "SystemSettings.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:58381",
+  "remote_address": "2001:4860:4802:38::223:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:61170",
+  "remote_address": "2606:4700:60:0:d35c:4cf:6168:76f6:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:3702",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17168,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:61999",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:63877",
+  "remote_address": "185.199.110.133:443",
+  "status": "ESTABLISHED",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60111",
+  "remote_address": "127.0.0.1:60099",
+  "status": "ESTABLISHED",
+  "pid": 24104,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 23164,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60085",
+  "remote_address": "127.0.0.1:53052",
+  "status": "ESTABLISHED",
+  "pid": 11900,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:56538",
+  "remote_address": "162.159.134.234:443",
+  "status": "ESTABLISHED",
+  "pid": 17972,
+  "process_name": "Discord.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:60106",
+  "remote_address": "34.54.84.110:443",
+  "status": "ESTABLISHED",
+  "pid": 24104,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:53769",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 9032,
+  "process_name": "warp-svc.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:60316",
+  "remote_address": "2404:6800:4000:1025::bc:5228",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60142",
+  "remote_address": "127.0.0.1:53057",
+  "status": "ESTABLISHED",
+  "pid": 24104,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60103",
+  "remote_address": "127.0.0.1:53058",
+  "status": "ESTABLISHED",
+  "pid": 24104,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:61992",
+  "remote_address": "34.54.84.110:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 6860,
+  "process_name": "steamwebhelper.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:9222",
+  "remote_address": "127.0.0.1:49681",
+  "status": "ESTABLISHED",
+  "pid": 23164,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:60139",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::58242",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:52804",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:27036",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 5108,
+  "process_name": "steam.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::65111",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::5357",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 4,
+  "process_name": "System"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 23164,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59253",
+  "remote_address": "127.0.0.1:59532",
+  "status": "ESTABLISHED",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "fe80::43db:b307:2e2e:f241:49331",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::3702",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17168,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:54335",
+  "remote_address": "34.230.242.71:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53050",
+  "remote_address": "127.0.0.1:53073",
+  "status": "ESTABLISHED",
+  "pid": 18248,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:49677",
+  "remote_address": "127.0.0.1:49676",
+  "status": "ESTABLISHED",
+  "pid": 1616,
+  "process_name": "WUDFHost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53050",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 18248,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61988",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "::1:1900",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60086",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 11900,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60084",
+  "remote_address": "127.0.0.1:60095",
+  "status": "ESTABLISHED",
+  "pid": 9144,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:53307",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49664",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1300,
+  "process_name": "lsass.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:58969",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59275",
+  "remote_address": "127.0.0.1:61987",
+  "status": "ESTABLISHED",
+  "pid": 24124,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:27036",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 5108,
+  "process_name": "steam.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::55509",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:51968",
+  "remote_address": "32.185.74.141:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:58606",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53051",
+  "remote_address": "127.0.0.1:60137",
+  "status": "ESTABLISHED",
+  "pid": 9144,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:60321",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61999",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53054",
+  "remote_address": "127.0.0.1:53091",
+  "status": "ESTABLISHED",
+  "pid": 24584,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "::1:49673",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 5584,
+  "process_name": "jhi_service.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:61470",
+  "remote_address": "140.82.113.22:443",
+  "status": "ESTABLISHED",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:52266",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:9222",
+  "remote_address": "127.0.0.1:62906",
+  "status": "ESTABLISHED",
+  "pid": 23164,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:64432",
+  "remote_address": "127.0.0.1:64439",
+  "status": "ESTABLISHED",
+  "pid": 5108,
+  "process_name": "steam.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::50715",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17168,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53063",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 9144,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5040",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 9748,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::445",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 4,
+  "process_name": "System"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59257",
+  "remote_address": "127.0.0.1:59532",
+  "status": "ESTABLISHED",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:49410",
+  "remote_address": "2603:1040:a06:6::2:443",
+  "status": "ESTABLISHED",
+  "pid": 5660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:137",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 4,
+  "process_name": "System"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49665",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1196,
+  "process_name": "wininit.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60094",
+  "remote_address": "127.0.0.1:60084",
+  "status": "ESTABLISHED",
+  "pid": 11900,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:55633",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61987",
+  "remote_address": "127.0.0.1:63031",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5050",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 9748,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:55509",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49680",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1272,
+  "process_name": "services.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60099",
+  "remote_address": "127.0.0.1:60117",
+  "status": "ESTABLISHED",
+  "pid": 7892,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:65138",
+  "remote_address": "2600:1900:4110:86f:::80",
+  "status": "ESTABLISHED",
+  "pid": 9440,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49668",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 4940,
+  "process_name": "spoolsv.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:49679",
+  "remote_address": "127.0.0.1:49678",
+  "status": "ESTABLISHED",
+  "pid": 3536,
+  "process_name": "NVDisplay.Container.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "::1:49333",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::61243",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53091",
+  "remote_address": "127.0.0.1:53054",
+  "status": "ESTABLISHED",
+  "pid": 18248,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59268",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:60320",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60141",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:62906",
+  "remote_address": "127.0.0.1:9222",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:6463",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 21936,
+  "process_name": "Discord.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:63844",
+  "remote_address": "2600:140f:1800::173a:5f8b:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:59656",
+  "remote_address": "35.212.67.155:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53307",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59534",
+  "remote_address": "127.0.0.1:59274",
+  "status": "ESTABLISHED",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:64433",
+  "remote_address": "127.0.0.1:64438",
+  "status": "ESTABLISHED",
+  "pid": 5108,
+  "process_name": "steam.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61996",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:49669",
+  "remote_address": "20.42.73.27:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59532",
+  "remote_address": "127.0.0.1:59253",
+  "status": "ESTABLISHED",
+  "pid": 24124,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60082",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 7892,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61987",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62789",
+  "remote_address": "20.207.73.85:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:56360",
+  "remote_address": "2001:4860:4802:38::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11900,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59532",
+  "remote_address": "127.0.0.1:59258",
+  "status": "ESTABLISHED",
+  "pid": 24124,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.2.3:53",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 9032,
+  "process_name": "warp-svc.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:54406",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61986",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:63031",
+  "remote_address": "127.0.0.1:61987",
+  "status": "ESTABLISHED",
+  "pid": 24556,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:65111",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:60141",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.2.2:53",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 9032,
+  "process_name": "warp-svc.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60137",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 11900,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:1900",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:9222",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 23164,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:52855",
+  "remote_address": "127.0.0.1:52854",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:63843",
+  "remote_address": "13.89.179.8:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:52850",
+  "remote_address": "13.89.179.14:443",
+  "status": "ESTABLISHED",
+  "pid": 24556,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53052",
+  "remote_address": "127.0.0.1:60085",
+  "status": "ESTABLISHED",
+  "pid": 9144,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:52854",
+  "remote_address": "127.0.0.1:52855",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:58963",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49666",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 2464,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:9222",
+  "remote_address": "127.0.0.1:49675",
+  "status": "ESTABLISHED",
+  "pid": 23164,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59535",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:58504",
+  "remote_address": "35.212.67.155:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60084",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 9144,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49667",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 3592,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53057",
+  "remote_address": "127.0.0.1:60142",
+  "status": "ESTABLISHED",
+  "pid": 7892,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:64438",
+  "remote_address": "127.0.0.1:64433",
+  "status": "ESTABLISHED",
+  "pid": 19404,
+  "process_name": "steamwebhelper.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::135",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1676,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:63783",
+  "remote_address": "20.207.73.85:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53054",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 24584,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59539",
+  "remote_address": "127.0.0.1:61987",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:49336",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60103",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 24104,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:65285",
+  "remote_address": "2606:4700:8d71:d8b7:9aca:0:ccf5:ac50:443",
+  "status": "ESTABLISHED",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.2.3:53",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 9032,
+  "process_name": "warp-svc.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:58376",
+  "remote_address": "34.230.242.71:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:64432",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 5108,
+  "process_name": "steam.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60090",
+  "remote_address": "127.0.0.1:60084",
+  "status": "ESTABLISHED",
+  "pid": 11900,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60142",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 24104,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:60319",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:27060",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 5108,
+  "process_name": "steam.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59534",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:64474",
+  "remote_address": "2600:1901:1:292:::443",
+  "status": "ESTABLISHED",
+  "pid": 17972,
+  "process_name": "Discord.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:51024",
+  "remote_address": "3.73.84.251:443",
+  "status": "CLOSE_WAIT",
+  "pid": 23516,
+  "process_name": "HP.HPX.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49665",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1196,
+  "process_name": "wininit.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49667",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 3592,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] SYSTEM: {
+  "event": "audit_logger_started",
+  "hostname": "IDK",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "timestamp": "2026-06-04T09:15:13.940043"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:59582",
+  "remote_address": "2603:1040:a06:6:::443",
+  "status": "ESTABLISHED",
+  "pid": 7652,
+  "process_name": "OneDrive.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59273",
+  "remote_address": "127.0.0.1:59268",
+  "status": "ESTABLISHED",
+  "pid": 24124,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:52803",
+  "remote_address": "127.0.0.1:5050",
+  "status": "CLOSE_WAIT",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:59671",
+  "remote_address": "34.230.242.71:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:60087",
+  "remote_address": "34.54.84.110:443",
+  "status": "ESTABLISHED",
+  "pid": 11900,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:59536",
+  "remote_address": "34.54.84.110:443",
+  "status": "ESTABLISHED",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62052",
+  "remote_address": "34.230.242.71:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59268",
+  "remote_address": "127.0.0.1:59273",
+  "status": "ESTABLISHED",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:27036",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 5108,
+  "process_name": "steam.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:61243",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "fe80::80c1:21f9:31b9:5028:1900",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60099",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 7892,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:61859",
+  "remote_address": "44.223.210.239:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53079",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 18248,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53050",
+  "remote_address": "127.0.0.1:53071",
+  "status": "ESTABLISHED",
+  "pid": 18248,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53067",
+  "remote_address": "127.0.0.1:53050",
+  "status": "ESTABLISHED",
+  "pid": 24584,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59532",
+  "remote_address": "127.0.0.1:59254",
+  "status": "ESTABLISHED",
+  "pid": 24124,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53058",
+  "remote_address": "127.0.0.1:60103",
+  "status": "ESTABLISHED",
+  "pid": 7892,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:58380",
+  "remote_address": "2001:4860:4802:38::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53050",
+  "remote_address": "127.0.0.1:53067",
+  "status": "ESTABLISHED",
+  "pid": 18248,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:50714",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17168,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49680",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1272,
+  "process_name": "services.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:59271",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "fe80::80c1:21f9:31b9:5028:49332",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:52563",
+  "remote_address": "13.89.179.8:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:53084",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:57711",
+  "remote_address": "127.0.0.1:9222",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:64439",
+  "remote_address": "127.0.0.1:64432",
+  "status": "ESTABLISHED",
+  "pid": 19404,
+  "process_name": "steamwebhelper.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:27036",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 5108,
+  "process_name": "steam.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53086",
+  "remote_address": "127.0.0.1:53090",
+  "status": "ESTABLISHED",
+  "pid": 24584,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60084",
+  "remote_address": "127.0.0.1:60091",
+  "status": "ESTABLISHED",
+  "pid": 9144,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:53548",
+  "remote_address": "2001:4860:4802:32::223:443",
+  "status": "ESTABLISHED",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:49681",
+  "remote_address": "127.0.0.1:9222",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61995",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:49335",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60137",
+  "remote_address": "127.0.0.1:53051",
+  "status": "ESTABLISHED",
+  "pid": 11900,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:57298",
+  "remote_address": "2606:4700:60:0:d35c:4cf:6168:76f6:443",
+  "status": "ESTABLISHED",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.2.2:53",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 9032,
+  "process_name": "warp-svc.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:56206",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60119",
+  "remote_address": "127.0.0.1:60099",
+  "status": "ESTABLISHED",
+  "pid": 24104,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:49664",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 5252,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60084",
+  "remote_address": "127.0.0.1:60090",
+  "status": "ESTABLISHED",
+  "pid": 9144,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:135",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1676,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:57091",
+  "remote_address": "2404:6800:4000:1025::bc:5228",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59532",
+  "remote_address": "127.0.0.1:59257",
+  "status": "ESTABLISHED",
+  "pid": 24124,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:52852",
+  "remote_address": "44.243.109.45:443",
+  "status": "ESTABLISHED",
+  "pid": 23516,
+  "process_name": "HP.HPX.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:52856",
+  "remote_address": "216.239.38.223:443",
+  "status": "SYN_SENT",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60099",
+  "remote_address": "127.0.0.1:60112",
+  "status": "ESTABLISHED",
+  "pid": 7892,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60139",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:54753",
+  "remote_address": "2600:9000:200a:9400:15:85fe:56c0:93a1:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:56557",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:49334",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:58219",
+  "remote_address": "2606:50c0:8002::154:443",
+  "status": "ESTABLISHED",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:60117",
+  "remote_address": "127.0.0.1:60099",
+  "status": "ESTABLISHED",
+  "pid": 24104,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:52851",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:58776",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:49676",
+  "remote_address": "127.0.0.1:49677",
+  "status": "ESTABLISHED",
+  "pid": 1616,
+  "process_name": "WUDFHost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:62000",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:7680",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53071",
+  "remote_address": "127.0.0.1:53050",
+  "status": "ESTABLISHED",
+  "pid": 24584,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53050",
+  "remote_address": "127.0.0.1:53068",
+  "status": "ESTABLISHED",
+  "pid": 18248,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:51238",
+  "remote_address": "44.223.210.239:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53073",
+  "remote_address": "127.0.0.1:53050",
+  "status": "ESTABLISHED",
+  "pid": 24584,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61987",
+  "remote_address": "127.0.0.1:59275",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49664",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 1300,
+  "process_name": "lsass.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:1900",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 11660,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:445",
+  "remote_address": "N/A",
+  "status": "LISTEN",
+  "pid": 4,
+  "process_name": "System"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::56557",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61987",
+  "remote_address": "127.0.0.1:59539",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:49678",
+  "remote_address": "127.0.0.1:49679",
+  "status": "ESTABLISHED",
+  "pid": 3536,
+  "process_name": "NVDisplay.Container.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::5353",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 10280,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:15:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:61996",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:13] SYSTEM: {
+  "cpu_percent": 0.0,
+  "memory_percent": 91.9,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:16] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52861",
+  "remote_address": "2001:4860:4802:32::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:16] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52859",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:16] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52858",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:16] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52857",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:16] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52862",
+  "remote_address": "2001:4860:4802:32::223:443",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:16] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:54090",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:16] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::54090",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:16] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52860",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:16] SYSTEM: {
+  "cpu_percent": 32.5,
+  "memory_percent": 92.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:65181",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:65182",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52863",
+  "remote_address": "2404:6800:4000:1006::84:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:65180",
+  "remote_address": "20.207.73.82:443",
+  "status": "ESTABLISHED",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:15:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:58969-20.207.73.82:443"
+}
+[2026-06-04 09:15:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:58963"
+}
+[2026-06-04 09:15:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:55633"
+}
+[2026-06-04 09:15:20] SYSTEM: {
+  "cpu_percent": 19.8,
+  "memory_percent": 92.5,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:23] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:65183",
+  "remote_address": "192.168.1.8:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:23] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:65184",
+  "remote_address": "192.168.1.8:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:23] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:61170-2606:4700:60:0:d35c:4cf:6168:76f6:443"
+}
+[2026-06-04 09:15:23] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:51968-32.185.74.141:443"
+}
+[2026-06-04 09:15:23] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:52266-20.207.73.82:443"
+}
+[2026-06-04 09:15:23] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:54753-2600:9000:200a:9400:15:85fe:56c0:93a1:443"
+}
+[2026-06-04 09:15:23] SYSTEM: {
+  "cpu_percent": 21.5,
+  "memory_percent": 92.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:26] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:50235",
+  "remote_address": "2606:4700:60:0:d35c:4cf:6168:76f6:443",
+  "status": "ESTABLISHED",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:15:26] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:57298-2606:4700:60:0:d35c:4cf:6168:76f6:443"
+}
+[2026-06-04 09:15:26] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:55509"
+}
+[2026-06-04 09:15:26] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:58381-2001:4860:4802:38::223:443"
+}
+[2026-06-04 09:15:26] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::55509"
+}
+[2026-06-04 09:15:26] SYSTEM: {
+  "cpu_percent": 18.6,
+  "memory_percent": 92.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:29] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:50236",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:29] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:50236",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:29] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:49669-20.42.73.27:443"
+}
+[2026-06-04 09:15:29] SYSTEM: {
+  "cpu_percent": 15.4,
+  "memory_percent": 92.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:32] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:9222",
+  "remote_address": "127.0.0.1:50238",
+  "status": "ESTABLISHED",
+  "pid": 23164,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:32] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:50238",
+  "remote_address": "127.0.0.1:9222",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:32] SYSTEM: {
+  "cpu_percent": 19.1,
+  "memory_percent": 92.4,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:35] PROCESS: {
+  "action": "started",
+  "pid": 22972,
+  "name": "chrome.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:15:35] PROCESS: {
+  "action": "terminated",
+  "pid": 6940
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:63658",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:59407",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::62077",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:62077",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:50773",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:62304",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:58906",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:58906",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::50773",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::62304",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:63658",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:54278",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:53658",
+  "remote_address": "2606:4700:8d92:e632:f4ca:0:6811:180e:443",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::54278",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:59407",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:52803-127.0.0.1:5050"
+}
+[2026-06-04 09:15:35] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:50236-127.0.0.1:61985"
+}
+[2026-06-04 09:15:35] SYSTEM: {
+  "cpu_percent": 23.8,
+  "memory_percent": 92.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:38] SYSTEM: {
+  "cpu_percent": 25.6,
+  "memory_percent": 92.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:43] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:58776"
+}
+[2026-06-04 09:15:43] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:65184-192.168.1.8:7680"
+}
+[2026-06-04 09:15:43] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:65183-192.168.1.8:7680"
+}
+[2026-06-04 09:15:43] SYSTEM: {
+  "cpu_percent": 70.1,
+  "memory_percent": 92.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:46] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:63659",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:46] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:63659",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:15:46] SYSTEM: {
+  "cpu_percent": 72.6,
+  "memory_percent": 92.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:50] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:52072",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:50] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:63660",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11900,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:50] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::52072",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:15:50] SYSTEM: {
+  "cpu_percent": 86.5,
+  "memory_percent": 92.7,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:53] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:63661",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 24104,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:15:53] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:63659-127.0.0.1:61985"
+}
+[2026-06-04 09:15:53] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:58504-35.212.67.155:443"
+}
+[2026-06-04 09:15:53] SYSTEM: {
+  "cpu_percent": 33.3,
+  "memory_percent": 92.9,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:15:56] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:61985-127.0.0.1:52804"
+}
+[2026-06-04 09:15:56] SYSTEM: {
+  "cpu_percent": 69.6,
+  "memory_percent": 93.1,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:00] PROCESS: {
+  "action": "started",
+  "pid": 3788,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:16:01] PROCESS: {
+  "action": "terminated",
+  "pid": 9440
+}
+[2026-06-04 09:16:01] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:34984",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 9032,
+  "process_name": "warp-svc.exe"
+}
+[2026-06-04 09:16:01] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:63662",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 24584,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:16:01] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:52079",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 9032,
+  "process_name": "warp-svc.exe"
+}
+[2026-06-04 09:16:01] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:63666",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:16:01] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:63663",
+  "remote_address": "72.153.5.136:443",
+  "status": "ESTABLISHED",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:16:01] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::54090"
+}
+[2026-06-04 09:16:01] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:58606-20.207.73.82:443"
+}
+[2026-06-04 09:16:01] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:54090"
+}
+[2026-06-04 09:16:01] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:65138-2600:1900:4110:86f:::80"
+}
+[2026-06-04 09:16:01] SYSTEM: {
+  "cpu_percent": 82.7,
+  "memory_percent": 93.2,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:04] PROCESS: {
+  "action": "started",
+  "pid": 424,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:16:06] PROCESS: {
+  "action": "terminated",
+  "pid": 3788
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:63667",
+  "remote_address": "192.168.1.15:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:63669",
+  "remote_address": "172.20.1.78:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:63681",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:63668",
+  "remote_address": "192.168.80.203:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:63678",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:63672",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:34984"
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:59407-127.0.0.1:5050"
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:62789-20.207.73.85:443"
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:52079"
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:63844-2600:140f:1800::173a:5f8b:443"
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::62077"
+}
+[2026-06-04 09:16:06] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:62077"
+}
+[2026-06-04 09:16:06] SYSTEM: {
+  "cpu_percent": 86.8,
+  "memory_percent": 93.4,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:09] PROCESS: {
+  "action": "terminated",
+  "pid": 424
+}
+[2026-06-04 09:16:09] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:63685",
+  "remote_address": "216.239.32.223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:16:09] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:63682",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:16:09] SYSTEM: {
+  "cpu_percent": 68.3,
+  "memory_percent": 93.3,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:13] PROCESS: {
+  "action": "started",
+  "pid": 13184,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:16:13] PROCESS: {
+  "action": "started",
+  "pid": 19496,
+  "name": "git-remote-https.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:16:13] PROCESS: {
+  "action": "started",
+  "pid": 22440,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:16:13] PROCESS: {
+  "action": "started",
+  "pid": 25876,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:16:13] PROCESS: {
+  "action": "started",
+  "pid": 26320,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:16:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:51804",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 6860,
+  "process_name": "steamwebhelper.exe"
+}
+[2026-06-04 09:16:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:63686",
+  "remote_address": "127.0.0.1:63687",
+  "status": "ESTABLISHED",
+  "pid": 19496,
+  "process_name": "git-remote-https.exe"
+}
+[2026-06-04 09:16:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:63688",
+  "remote_address": "20.207.73.82:443",
+  "status": "ESTABLISHED",
+  "pid": 19496,
+  "process_name": "git-remote-https.exe"
+}
+[2026-06-04 09:16:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:63687",
+  "remote_address": "127.0.0.1:63686",
+  "status": "ESTABLISHED",
+  "pid": 19496,
+  "process_name": "git-remote-https.exe"
+}
+[2026-06-04 09:16:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:51803",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 6860,
+  "process_name": "steamwebhelper.exe"
+}
+[2026-06-04 09:16:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:58522",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17972,
+  "process_name": "Discord.exe"
+}
+[2026-06-04 09:16:13] SYSTEM: {
+  "cpu_percent": 81.9,
+  "memory_percent": 93.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:20] PROCESS: {
+  "action": "terminated",
+  "pid": 13184
+}
+[2026-06-04 09:16:20] PROCESS: {
+  "action": "terminated",
+  "pid": 19496
+}
+[2026-06-04 09:16:20] PROCESS: {
+  "action": "terminated",
+  "pid": 22440
+}
+[2026-06-04 09:16:20] PROCESS: {
+  "action": "terminated",
+  "pid": 26320
+}
+[2026-06-04 09:16:20] PROCESS: {
+  "action": "terminated",
+  "pid": 25876
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:52118",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:52119",
+  "remote_address": "127.0.0.1:52120",
+  "status": "ESTABLISHED",
+  "pid": 23768,
+  "process_name": "git-remote-https.exe"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:52118",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:52120",
+  "remote_address": "127.0.0.1:52119",
+  "status": "ESTABLISHED",
+  "pid": 23768,
+  "process_name": "git-remote-https.exe"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:63814",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:61439",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:63814",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61439",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:52121",
+  "remote_address": "20.207.73.82:443",
+  "status": "ESTABLISHED",
+  "pid": 23768,
+  "process_name": "git-remote-https.exe"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:63686-127.0.0.1:63687"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:51804"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:63687-127.0.0.1:63686"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:61985-127.0.0.1:63845"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:63658"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::50773"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:51969-2001:4860:4802:38::223:443"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:52072"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:51803"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:58906-127.0.0.1:5050"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::52072"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:58906"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:63658-127.0.0.1:5050"
+}
+[2026-06-04 09:16:20] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:50773"
+}
+[2026-06-04 09:16:20] SYSTEM: {
+  "cpu_percent": 70.5,
+  "memory_percent": 93.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:24] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:64713",
+  "remote_address": "100.51.113.241:443",
+  "status": "SYN_SENT",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:24] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:50916",
+  "remote_address": "35.212.67.155:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:24] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:57217",
+  "remote_address": "35.212.67.155:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:63667-192.168.1.15:7680"
+}
+[2026-06-04 09:16:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:59656-35.212.67.155:443"
+}
+[2026-06-04 09:16:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:52119-127.0.0.1:52120"
+}
+[2026-06-04 09:16:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:63668-192.168.80.203:7680"
+}
+[2026-06-04 09:16:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:58376-34.230.242.71:443"
+}
+[2026-06-04 09:16:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:63669-172.20.1.78:7680"
+}
+[2026-06-04 09:16:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:52120-127.0.0.1:52119"
+}
+[2026-06-04 09:16:24] SYSTEM: {
+  "cpu_percent": 83.2,
+  "memory_percent": 93.4,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:27] PROCESS: {
+  "action": "started",
+  "pid": 940,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:16:28] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::58076",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:16:28] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:50933",
+  "remote_address": "34.233.30.196:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:28] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:58076",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:16:28] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:50235-2606:4700:60:0:d35c:4cf:6168:76f6:443"
+}
+[2026-06-04 09:16:28] SYSTEM: {
+  "cpu_percent": 77.8,
+  "memory_percent": 93.5,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:32] PROCESS: {
+  "action": "terminated",
+  "pid": 940
+}
+[2026-06-04 09:16:32] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:65111"
+}
+[2026-06-04 09:16:32] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::65111"
+}
+[2026-06-04 09:16:32] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:63814-127.0.0.1:5050"
+}
+[2026-06-04 09:16:32] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:60319-20.207.73.82:443"
+}
+[2026-06-04 09:16:32] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:61439-127.0.0.1:5050"
+}
+[2026-06-04 09:16:32] SYSTEM: {
+  "cpu_percent": 68.0,
+  "memory_percent": 93.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:36] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:59153",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:36] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:50934",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:16:36] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:50934",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:16:36] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::59153",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:36] SYSTEM: {
+  "cpu_percent": 76.3,
+  "memory_percent": 93.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:39] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62452",
+  "remote_address": "20.42.73.27:443",
+  "status": "ESTABLISHED",
+  "pid": 24556,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:16:39] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:62334",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:39] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:62334",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:16:39] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:52563-13.89.179.8:443"
+}
+[2026-06-04 09:16:39] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:63843-13.89.179.8:443"
+}
+[2026-06-04 09:16:39] SYSTEM: {
+  "cpu_percent": 73.3,
+  "memory_percent": 93.5,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:43] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:62453",
+  "remote_address": "10.10.56.181:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:16:43] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:50934-127.0.0.1:61985"
+}
+[2026-06-04 09:16:43] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:58522"
+}
+[2026-06-04 09:16:43] SYSTEM: {
+  "cpu_percent": 83.9,
+  "memory_percent": 93.5,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::63579",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::49716",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:16:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:63579",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:50148",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::50148",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:49716",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:16:48] SYSTEM: {
+  "cpu_percent": 83.4,
+  "memory_percent": 93.7,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:51] PROCESS: {
+  "action": "terminated",
+  "pid": 3108
+}
+[2026-06-04 09:16:51] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:62470",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:51] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::62470",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:51] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:52737",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:16:52] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:65370",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:16:52] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:53389",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:16:52] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:53389",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:52] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:65370",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:52] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:52737",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:52] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:63579"
+}
+[2026-06-04 09:16:52] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:54405-20.207.73.82:443"
+}
+[2026-06-04 09:16:52] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::63579"
+}
+[2026-06-04 09:16:52] SYSTEM: {
+  "cpu_percent": 63.2,
+  "memory_percent": 93.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:16:57] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:54867",
+  "remote_address": "100.51.113.241:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:16:57] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:54335-34.230.242.71:443"
+}
+[2026-06-04 09:16:57] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:55634-20.184.175.3:443"
+}
+[2026-06-04 09:16:57] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:58076"
+}
+[2026-06-04 09:16:57] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::58076"
+}
+[2026-06-04 09:16:57] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:57711-127.0.0.1:9222"
+}
+[2026-06-04 09:16:57] SYSTEM: {
+  "cpu_percent": 78.8,
+  "memory_percent": 93.7,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:01] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:54868",
+  "remote_address": "72.153.5.136:443",
+  "status": "ESTABLISHED",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:01] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:61985-127.0.0.1:60321"
+}
+[2026-06-04 09:17:01] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:56206-20.207.73.82:443"
+}
+[2026-06-04 09:17:01] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:61985-127.0.0.1:60320"
+}
+[2026-06-04 09:17:01] SYSTEM: {
+  "cpu_percent": 76.6,
+  "memory_percent": 93.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:54398",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:17:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:54398",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:17:05] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:62453-10.10.56.181:7680"
+}
+[2026-06-04 09:17:05] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:63783-20.207.73.85:443"
+}
+[2026-06-04 09:17:05] SYSTEM: {
+  "cpu_percent": 80.1,
+  "memory_percent": 93.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:08] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:59671-34.230.242.71:443"
+}
+[2026-06-04 09:17:08] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:61985-127.0.0.1:52851"
+}
+[2026-06-04 09:17:08] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:52267-20.184.175.7:443"
+}
+[2026-06-04 09:17:08] SYSTEM: {
+  "cpu_percent": 71.7,
+  "memory_percent": 93.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:11] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:61611",
+  "remote_address": "100.51.113.241:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:17:11] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:62052-34.230.242.71:443"
+}
+[2026-06-04 09:17:11] SYSTEM: {
+  "cpu_percent": 76.0,
+  "memory_percent": 93.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:15] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:52510",
+  "remote_address": "162.159.192.1:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:17:15] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:52509",
+  "remote_address": "100.51.113.241:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:17:15] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:50148"
+}
+[2026-06-04 09:17:15] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::62304"
+}
+[2026-06-04 09:17:15] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:62304"
+}
+[2026-06-04 09:17:15] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::50148"
+}
+[2026-06-04 09:17:15] SYSTEM: {
+  "cpu_percent": 77.2,
+  "memory_percent": 93.7,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:19] PROCESS: {
+  "action": "started",
+  "pid": 2072,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:17:19] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:62470"
+}
+[2026-06-04 09:17:19] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:62790-20.184.175.0:443"
+}
+[2026-06-04 09:17:19] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52860-2001:4860:4802:36::223:443"
+}
+[2026-06-04 09:17:19] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52858-2001:4860:4802:36::223:443"
+}
+[2026-06-04 09:17:19] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::62470"
+}
+[2026-06-04 09:17:19] SYSTEM: {
+  "cpu_percent": 67.9,
+  "memory_percent": 93.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:23] PROCESS: {
+  "action": "terminated",
+  "pid": 2072
+}
+[2026-06-04 09:17:23] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:52512",
+  "remote_address": "192.168.1.11:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:23] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:52511",
+  "remote_address": "192.168.20.100:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:23] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52862-2001:4860:4802:32::223:443"
+}
+[2026-06-04 09:17:23] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:65181-2001:4860:4802:36::223:443"
+}
+[2026-06-04 09:17:23] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52857-2001:4860:4802:36::223:443"
+}
+[2026-06-04 09:17:23] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:63846-2001:4860:4802:36::223:443"
+}
+[2026-06-04 09:17:23] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:52856-216.239.38.223:443"
+}
+[2026-06-04 09:17:23] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52859-2001:4860:4802:36::223:443"
+}
+[2026-06-04 09:17:23] SYSTEM: {
+  "cpu_percent": 80.2,
+  "memory_percent": 93.5,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:26] PROCESS: {
+  "action": "started",
+  "pid": 1268,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:17:26] PROCESS: {
+  "action": "started",
+  "pid": 1992,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:17:27] SYSTEM: {
+  "cpu_percent": 75.3,
+  "memory_percent": 93.7,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:27] SECURITY_ALERT: {
+  "action": "ai_threat_detected",
+  "risk_score": 65,
+  "triggers": [
+    "bank",
+    "confidential"
+  ],
+  "recommendation": "BLOCK",
+  "content_preview": "confidential bank details"
+}
+[2026-06-04 09:17:30] PROCESS: {
+  "action": "started",
+  "pid": 25868,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:17:30] PROCESS: {
+  "action": "terminated",
+  "pid": 1992
+}
+[2026-06-04 09:17:30] PROCESS: {
+  "action": "terminated",
+  "pid": 1268
+}
+[2026-06-04 09:17:30] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:59960",
+  "remote_address": "54.158.118.211:443",
+  "status": "SYN_SENT",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:17:30] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:62917-44.223.210.239:443"
+}
+[2026-06-04 09:17:30] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:51238-44.223.210.239:443"
+}
+[2026-06-04 09:17:30] SYSTEM: {
+  "cpu_percent": 61.1,
+  "memory_percent": 93.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:33] PROCESS: {
+  "action": "terminated",
+  "pid": 25868
+}
+[2026-06-04 09:17:33] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:53514",
+  "remote_address": "54.158.118.211:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:17:33] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:59963",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:17:33] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:63226",
+  "remote_address": "2404:6800:4000:1025::bc:5228",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:17:33] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:52118-127.0.0.1:5050"
+}
+[2026-06-04 09:17:33] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:50933-34.233.30.196:443"
+}
+[2026-06-04 09:17:33] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:62334-127.0.0.1:5050"
+}
+[2026-06-04 09:17:33] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:53389-127.0.0.1:5050"
+}
+[2026-06-04 09:17:33] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:52737-127.0.0.1:5050"
+}
+[2026-06-04 09:17:33] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:65370-127.0.0.1:5050"
+}
+[2026-06-04 09:17:33] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:57091-2404:6800:4000:1025::bc:5228"
+}
+[2026-06-04 09:17:33] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:52803"
+}
+[2026-06-04 09:17:33] SYSTEM: {
+  "cpu_percent": 82.1,
+  "memory_percent": 93.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:36] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:61985-127.0.0.1:50236"
+}
+[2026-06-04 09:17:36] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:56557"
+}
+[2026-06-04 09:17:36] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::56557"
+}
+[2026-06-04 09:17:36] SYSTEM: {
+  "cpu_percent": 60.7,
+  "memory_percent": 93.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:39] SYSTEM: {
+  "cpu_percent": 68.2,
+  "memory_percent": 93.9,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:42] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:52512-192.168.1.11:7680"
+}
+[2026-06-04 09:17:42] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:52511-192.168.20.100:7680"
+}
+[2026-06-04 09:17:42] SYSTEM: {
+  "cpu_percent": 68.2,
+  "memory_percent": 93.9,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:45] SYSTEM: {
+  "cpu_percent": 69.9,
+  "memory_percent": 93.7,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:48] PROCESS: {
+  "action": "started",
+  "pid": 25516,
+  "name": "svchost.exe",
+  "username": null
+}
+[2026-06-04 09:17:48] PROCESS: {
+  "action": "terminated",
+  "pid": 25016
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::54299",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::51923",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:62673",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:62673",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:59198",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:56517",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:57007",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:51285",
+  "remote_address": "2606:4700:8dd3:9436:47ca:0:6811:cf05:443",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::50482",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:61493",
+  "remote_address": "20.42.73.31:443",
+  "status": "ESTABLISHED",
+  "pid": 5160,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::57007",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:50482",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::64561",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::59198",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:64561",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::56517",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:51923",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:54299",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::54278"
+}
+[2026-06-04 09:17:48] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:54278"
+}
+[2026-06-04 09:17:48] SYSTEM: {
+  "cpu_percent": 71.5,
+  "memory_percent": 93.7,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:51] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:61985-127.0.0.1:63659"
+}
+[2026-06-04 09:17:51] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:65180-20.207.73.82:443"
+}
+[2026-06-04 09:17:51] SYSTEM: {
+  "cpu_percent": 25.2,
+  "memory_percent": 93.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:54] SYSTEM: {
+  "cpu_percent": 72.5,
+  "memory_percent": 93.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:17:58] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:63877-185.199.110.133:443"
+}
+[2026-06-04 09:17:58] SYSTEM: {
+  "cpu_percent": 52.2,
+  "memory_percent": 93.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:01] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:63666-20.207.73.82:443"
+}
+[2026-06-04 09:18:01] SYSTEM: {
+  "cpu_percent": 69.2,
+  "memory_percent": 93.7,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:04] PROCESS: {
+  "action": "started",
+  "pid": 2932,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:04] PROCESS: {
+  "action": "started",
+  "pid": 4736,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:04] PROCESS: {
+  "action": "started",
+  "pid": 8916,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:04] PROCESS: {
+  "action": "started",
+  "pid": 12072,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:04] PROCESS: {
+  "action": "started",
+  "pid": 12280,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:04] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:62676",
+  "remote_address": "172.20.48.101:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:18:04] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:62674",
+  "remote_address": "192.168.20.100:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:18:04] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:62675",
+  "remote_address": "172.20.48.101:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:18:04] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:63678-20.207.73.82:443"
+}
+[2026-06-04 09:18:04] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:63672-20.207.73.82:443"
+}
+[2026-06-04 09:18:04] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:59407"
+}
+[2026-06-04 09:18:04] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:63681-20.207.73.82:443"
+}
+[2026-06-04 09:18:04] SYSTEM: {
+  "cpu_percent": 69.2,
+  "memory_percent": 93.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:07] PROCESS: {
+  "action": "terminated",
+  "pid": 4736
+}
+[2026-06-04 09:18:07] PROCESS: {
+  "action": "terminated",
+  "pid": 12072
+}
+[2026-06-04 09:18:07] PROCESS: {
+  "action": "terminated",
+  "pid": 2932
+}
+[2026-06-04 09:18:07] PROCESS: {
+  "action": "terminated",
+  "pid": 8916
+}
+[2026-06-04 09:18:07] PROCESS: {
+  "action": "terminated",
+  "pid": 12280
+}
+[2026-06-04 09:18:07] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:63663-72.153.5.136:443"
+}
+[2026-06-04 09:18:07] SYSTEM: {
+  "cpu_percent": 79.1,
+  "memory_percent": 93.7,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:10] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:58380-2001:4860:4802:38::223:443"
+}
+[2026-06-04 09:18:10] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:65182-2001:4860:4802:36::223:443"
+}
+[2026-06-04 09:18:10] SYSTEM: {
+  "cpu_percent": 67.6,
+  "memory_percent": 93.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:59889",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 6860,
+  "process_name": "steamwebhelper.exe"
+}
+[2026-06-04 09:18:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:59888",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 6860,
+  "process_name": "steamwebhelper.exe"
+}
+[2026-06-04 09:18:13] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62677",
+  "remote_address": "44.243.109.45:443",
+  "status": "ESTABLISHED",
+  "pid": 23516,
+  "process_name": "HP.HPX.exe"
+}
+[2026-06-04 09:18:13] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:52852-44.243.109.45:443"
+}
+[2026-06-04 09:18:13] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:61859-44.223.210.239:443"
+}
+[2026-06-04 09:18:13] SYSTEM: {
+  "cpu_percent": 75.3,
+  "memory_percent": 93.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:16] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:56895",
+  "remote_address": "54.158.118.211:443",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:18:16] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:59889"
+}
+[2026-06-04 09:18:16] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:63688-20.207.73.82:443"
+}
+[2026-06-04 09:18:16] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:59888"
+}
+[2026-06-04 09:18:16] SYSTEM: {
+  "cpu_percent": 75.4,
+  "memory_percent": 93.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:19] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:50486",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:18:19] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:59198"
+}
+[2026-06-04 09:18:19] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::59198"
+}
+[2026-06-04 09:18:19] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:56517"
+}
+[2026-06-04 09:18:19] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::56517"
+}
+[2026-06-04 09:18:19] SYSTEM: {
+  "cpu_percent": 78.9,
+  "memory_percent": 93.4,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:22] PROCESS: {
+  "action": "started",
+  "pid": 404,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:22] PROCESS: {
+  "action": "started",
+  "pid": 25768,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:22] PROCESS: {
+  "action": "terminated",
+  "pid": 21288
+}
+[2026-06-04 09:18:22] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:53548-2001:4860:4802:32::223:443"
+}
+[2026-06-04 09:18:22] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:62674-192.168.20.100:7680"
+}
+[2026-06-04 09:18:22] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:52121-20.207.73.82:443"
+}
+[2026-06-04 09:18:22] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:62675-172.20.48.101:7680"
+}
+[2026-06-04 09:18:22] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:62676-172.20.48.101:7680"
+}
+[2026-06-04 09:18:22] SYSTEM: {
+  "cpu_percent": 77.0,
+  "memory_percent": 93.5,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:25] PROCESS: {
+  "action": "terminated",
+  "pid": 25768
+}
+[2026-06-04 09:18:25] PROCESS: {
+  "action": "terminated",
+  "pid": 404
+}
+[2026-06-04 09:18:25] SYSTEM: {
+  "cpu_percent": 70.6,
+  "memory_percent": 93.5,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:28] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:56896",
+  "remote_address": "52.182.141.63:443",
+  "status": "ESTABLISHED",
+  "pid": 2008,
+  "process_name": "FileCoAuth.exe"
+}
+[2026-06-04 09:18:28] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::54457",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:18:28] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:62464",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:18:28] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:54457",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:18:28] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::62464",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:18:28] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::54299"
+}
+[2026-06-04 09:18:28] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:54299"
+}
+[2026-06-04 09:18:28] SYSTEM: {
+  "cpu_percent": 67.8,
+  "memory_percent": 93.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:32] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:61439"
+}
+[2026-06-04 09:18:32] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:63814"
+}
+[2026-06-04 09:18:32] SYSTEM: {
+  "cpu_percent": 37.0,
+  "memory_percent": 93.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:35] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:52850-13.89.179.14:443"
+}
+[2026-06-04 09:18:35] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:61470-140.82.113.22:443"
+}
+[2026-06-04 09:18:35] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:56976-13.89.179.14:443"
+}
+[2026-06-04 09:18:35] SYSTEM: {
+  "cpu_percent": 70.7,
+  "memory_percent": 94.0,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:38] PROCESS: {
+  "action": "started",
+  "pid": 980,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:38] SYSTEM: {
+  "cpu_percent": 59.3,
+  "memory_percent": 94.1,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:41] PROCESS: {
+  "action": "started",
+  "pid": 12340,
+  "name": "backgroundTaskHost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:41] PROCESS: {
+  "action": "started",
+  "pid": 19656,
+  "name": "StoreDesktopExtension.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:41] PROCESS: {
+  "action": "started",
+  "pid": 24856,
+  "name": "backgroundTaskHost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:41] PROCESS: {
+  "action": "terminated",
+  "pid": 980
+}
+[2026-06-04 09:18:41] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:61985-127.0.0.1:50934"
+}
+[2026-06-04 09:18:41] SYSTEM: {
+  "cpu_percent": 80.9,
+  "memory_percent": 94.2,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:44] PROCESS: {
+  "action": "started",
+  "pid": 19384,
+  "name": "PhoneExperienceHost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:44] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:56898",
+  "remote_address": "172.20.1.78:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:18:44] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:56897",
+  "remote_address": "192.168.20.100:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:18:44] SYSTEM: {
+  "cpu_percent": 82.0,
+  "memory_percent": 94.3,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:47] PROCESS: {
+  "action": "started",
+  "pid": 26276,
+  "name": "svchost.exe",
+  "username": null
+}
+[2026-06-04 09:18:47] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::49716"
+}
+[2026-06-04 09:18:47] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:50486"
+}
+[2026-06-04 09:18:47] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52863-2404:6800:4000:1006::84:443"
+}
+[2026-06-04 09:18:47] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:49716"
+}
+[2026-06-04 09:18:47] SYSTEM: {
+  "cpu_percent": 81.5,
+  "memory_percent": 94.4,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:50] PROCESS: {
+  "action": "started",
+  "pid": 5420,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:18:50] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:57551",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17972,
+  "process_name": "Discord.exe"
+}
+[2026-06-04 09:18:50] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:62673"
+}
+[2026-06-04 09:18:50] SYSTEM: {
+  "cpu_percent": 71.4,
+  "memory_percent": 94.4,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:51] SECURITY_ALERT: {
+  "action": "ai_threat_detected",
+  "risk_score": 65,
+  "triggers": [
+    "bank",
+    "confidential"
+  ],
+  "recommendation": "BLOCK",
+  "content_preview": "confidential bank details"
+}
+[2026-06-04 09:18:53] PROCESS: {
+  "action": "terminated",
+  "pid": 5420
+}
+[2026-06-04 09:18:53] SYSTEM: {
+  "cpu_percent": 68.1,
+  "memory_percent": 94.3,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:56] SYSTEM: {
+  "cpu_percent": 65.4,
+  "memory_percent": 94.5,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:57394",
+  "remote_address": "192.168.20.100:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:57395",
+  "remote_address": "10.10.56.181:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:57393",
+  "remote_address": "2404:6800:4003:c03::bc:5228",
+  "status": "ESTABLISHED",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:56898-172.20.1.78:7680"
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::54457"
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::57007"
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:57007"
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:58219-2606:50c0:8002::154:443"
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::62464"
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:56897-192.168.20.100:7680"
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:60316-2404:6800:4000:1025::bc:5228"
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:62464"
+}
+[2026-06-04 09:18:59] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:54457"
+}
+[2026-06-04 09:18:59] SYSTEM: {
+  "cpu_percent": 57.0,
+  "memory_percent": 94.4,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:02] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::51287",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:02] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62587",
+  "remote_address": "140.82.114.26:443",
+  "status": "ESTABLISHED",
+  "pid": 20452,
+  "process_name": "brave.exe"
+}
+[2026-06-04 09:19:02] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62590",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:19:02] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:51287",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:02] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::50482"
+}
+[2026-06-04 09:19:02] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:57395-10.10.56.181:7680"
+}
+[2026-06-04 09:19:02] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:57394-192.168.20.100:7680"
+}
+[2026-06-04 09:19:02] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:50482"
+}
+[2026-06-04 09:19:02] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::64561"
+}
+[2026-06-04 09:19:02] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:64561"
+}
+[2026-06-04 09:19:02] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:53540-140.82.114.26:443"
+}
+[2026-06-04 09:19:02] SYSTEM: {
+  "cpu_percent": 78.4,
+  "memory_percent": 94.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:05] PROCESS: {
+  "action": "started",
+  "pid": 4856,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:05] PROCESS: {
+  "action": "started",
+  "pid": 10344,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:05] PROCESS: {
+  "action": "started",
+  "pid": 19796,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:05] PROCESS: {
+  "action": "started",
+  "pid": 23148,
+  "name": "git-remote-https.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:05] PROCESS: {
+  "action": "started",
+  "pid": 24852,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:55473",
+  "remote_address": "127.0.0.1:5050",
+  "status": "ESTABLISHED",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:64016",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:62601",
+  "remote_address": "127.0.0.1:62602",
+  "status": "ESTABLISHED",
+  "pid": 23148,
+  "process_name": "git-remote-https.exe"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62593",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::64016",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:62597",
+  "remote_address": "2600:140f:1800::173a:5f8b:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:62602",
+  "remote_address": "127.0.0.1:62601",
+  "status": "ESTABLISHED",
+  "pid": 23148,
+  "process_name": "git-remote-https.exe"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::51949",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62596",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62603",
+  "remote_address": "20.207.73.82:443",
+  "status": "ESTABLISHED",
+  "pid": 23148,
+  "process_name": "git-remote-https.exe"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:62965",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::62965",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:51949",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:5050",
+  "remote_address": "127.0.0.1:55473",
+  "status": "ESTABLISHED",
+  "pid": 10624,
+  "process_name": "python.exe"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62600",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::51287"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:51923"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::51923"
+}
+[2026-06-04 09:19:05] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:51287"
+}
+[2026-06-04 09:19:05] SYSTEM: {
+  "cpu_percent": 73.6,
+  "memory_percent": 95.0,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:09] PROCESS: {
+  "action": "terminated",
+  "pid": 10344
+}
+[2026-06-04 09:19:09] PROCESS: {
+  "action": "terminated",
+  "pid": 23148
+}
+[2026-06-04 09:19:09] PROCESS: {
+  "action": "terminated",
+  "pid": 19796
+}
+[2026-06-04 09:19:09] PROCESS: {
+  "action": "terminated",
+  "pid": 24852
+}
+[2026-06-04 09:19:09] PROCESS: {
+  "action": "terminated",
+  "pid": 4856
+}
+[2026-06-04 09:19:09] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:55474",
+  "remote_address": "192.168.20.100:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:09] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:55475",
+  "remote_address": "192.168.1.11:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:09] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:62601-127.0.0.1:62602"
+}
+[2026-06-04 09:19:09] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:62602-127.0.0.1:62601"
+}
+[2026-06-04 09:19:09] SYSTEM: {
+  "cpu_percent": 53.6,
+  "memory_percent": 94.0,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:12] PROCESS: {
+  "action": "started",
+  "pid": 3584,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:12] PROCESS: {
+  "action": "started",
+  "pid": 6940,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:12] PROCESS: {
+  "action": "started",
+  "pid": 22464,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:12] PROCESS: {
+  "action": "started",
+  "pid": 22876,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:12] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:52510-162.159.192.1:443"
+}
+[2026-06-04 09:19:12] SYSTEM: {
+  "cpu_percent": 62.0,
+  "memory_percent": 93.9,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:15] PROCESS: {
+  "action": "started",
+  "pid": 23836,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:15] PROCESS: {
+  "action": "started",
+  "pid": 24548,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:15] PROCESS: {
+  "action": "started",
+  "pid": 25580,
+  "name": "git-remote-https.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:15] PROCESS: {
+  "action": "started",
+  "pid": 25636,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:15] PROCESS: {
+  "action": "started",
+  "pid": 26116,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:15] PROCESS: {
+  "action": "terminated",
+  "pid": 3584
+}
+[2026-06-04 09:19:15] PROCESS: {
+  "action": "terminated",
+  "pid": 22876
+}
+[2026-06-04 09:19:15] PROCESS: {
+  "action": "terminated",
+  "pid": 6940
+}
+[2026-06-04 09:19:15] PROCESS: {
+  "action": "terminated",
+  "pid": 22464
+}
+[2026-06-04 09:19:15] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:55479",
+  "remote_address": "20.207.73.82:443",
+  "status": "SYN_SENT",
+  "pid": 25580,
+  "process_name": "git-remote-https.exe"
+}
+[2026-06-04 09:19:15] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:55476",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:19:15] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:55478",
+  "remote_address": "127.0.0.1:55477",
+  "status": "ESTABLISHED",
+  "pid": 25580,
+  "process_name": "git-remote-https.exe"
+}
+[2026-06-04 09:19:15] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:55477",
+  "remote_address": "127.0.0.1:55478",
+  "status": "ESTABLISHED",
+  "pid": 25580,
+  "process_name": "git-remote-https.exe"
+}
+[2026-06-04 09:19:15] SYSTEM: {
+  "cpu_percent": 67.4,
+  "memory_percent": 93.9,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:18] PROCESS: {
+  "action": "started",
+  "pid": 6248,
+  "name": "git-credential-manager.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:18] PROCESS: {
+  "action": "started",
+  "pid": 20408,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:18] PROCESS: {
+  "action": "started",
+  "pid": 22092,
+  "name": "sh.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:18] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:55480",
+  "remote_address": "2603:1063:10:118::365:7ea3:443",
+  "status": "ESTABLISHED",
+  "pid": 5424,
+  "process_name": "MpDefenderCoreService.exe"
+}
+[2026-06-04 09:19:18] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::62965"
+}
+[2026-06-04 09:19:18] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:62965"
+}
+[2026-06-04 09:19:18] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:64016"
+}
+[2026-06-04 09:19:18] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::64016"
+}
+[2026-06-04 09:19:18] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:52861-2001:4860:4802:32::223:443"
+}
+[2026-06-04 09:19:18] SYSTEM: {
+  "cpu_percent": 76.9,
+  "memory_percent": 94.0,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:21] PROCESS: {
+  "action": "terminated",
+  "pid": 26116
+}
+[2026-06-04 09:19:21] PROCESS: {
+  "action": "terminated",
+  "pid": 25636
+}
+[2026-06-04 09:19:21] PROCESS: {
+  "action": "terminated",
+  "pid": 24548
+}
+[2026-06-04 09:19:21] PROCESS: {
+  "action": "terminated",
+  "pid": 6248
+}
+[2026-06-04 09:19:21] PROCESS: {
+  "action": "terminated",
+  "pid": 25580
+}
+[2026-06-04 09:19:21] PROCESS: {
+  "action": "terminated",
+  "pid": 22092
+}
+[2026-06-04 09:19:21] PROCESS: {
+  "action": "terminated",
+  "pid": 20408
+}
+[2026-06-04 09:19:21] PROCESS: {
+  "action": "terminated",
+  "pid": 23836
+}
+[2026-06-04 09:19:21] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:55478-127.0.0.1:55477"
+}
+[2026-06-04 09:19:21] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:55477-127.0.0.1:55478"
+}
+[2026-06-04 09:19:21] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:57551"
+}
+[2026-06-04 09:19:21] SYSTEM: {
+  "cpu_percent": 76.1,
+  "memory_percent": 93.7,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:24] PROCESS: {
+  "action": "started",
+  "pid": 2624,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:24] PROCESS: {
+  "action": "started",
+  "pid": 3040,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:24] PROCESS: {
+  "action": "started",
+  "pid": 5592,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:24] PROCESS: {
+  "action": "started",
+  "pid": 6940,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:24] PROCESS: {
+  "action": "started",
+  "pid": 7920,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:24] PROCESS: {
+  "action": "started",
+  "pid": 13440,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:24] PROCESS: {
+  "action": "started",
+  "pid": 19612,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:24] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:57842",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:24] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::57842",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:24] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:55483",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:19:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:51949"
+}
+[2026-06-04 09:19:24] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::51949"
+}
+[2026-06-04 09:19:24] SYSTEM: {
+  "cpu_percent": 80.5,
+  "memory_percent": 94.0,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:27] PROCESS: {
+  "action": "terminated",
+  "pid": 2624
+}
+[2026-06-04 09:19:27] PROCESS: {
+  "action": "terminated",
+  "pid": 3040
+}
+[2026-06-04 09:19:27] PROCESS: {
+  "action": "terminated",
+  "pid": 13440
+}
+[2026-06-04 09:19:27] PROCESS: {
+  "action": "terminated",
+  "pid": 6940
+}
+[2026-06-04 09:19:27] PROCESS: {
+  "action": "terminated",
+  "pid": 7920
+}
+[2026-06-04 09:19:27] PROCESS: {
+  "action": "terminated",
+  "pid": 5592
+}
+[2026-06-04 09:19:27] PROCESS: {
+  "action": "terminated",
+  "pid": 19612
+}
+[2026-06-04 09:19:27] SYSTEM: {
+  "cpu_percent": 64.6,
+  "memory_percent": 94.1,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:30] PROCESS: {
+  "action": "started",
+  "pid": 10344,
+  "name": "WmiPrvSE.exe",
+  "username": null
+}
+[2026-06-04 09:19:31] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:55272",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:19:31] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:55271",
+  "remote_address": "51.11.192.49:443",
+  "status": "ESTABLISHED",
+  "pid": 24556,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:19:31] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:53347",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:31] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:61737",
+  "remote_address": "51.11.192.49:443",
+  "status": "ESTABLISHED",
+  "pid": 24556,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:19:31] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::53347",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:31] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:55272",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:19:31] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:55475-192.168.1.11:7680"
+}
+[2026-06-04 09:19:31] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:55474-192.168.20.100:7680"
+}
+[2026-06-04 09:19:31] SYSTEM: {
+  "cpu_percent": 81.8,
+  "memory_percent": 94.4,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:34] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::54814",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:19:34] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:61738",
+  "remote_address": "51.104.15.253:443",
+  "status": "ESTABLISHED",
+  "pid": 5160,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:34] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:54814",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:19:34] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:53347"
+}
+[2026-06-04 09:19:34] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:65370"
+}
+[2026-06-04 09:19:34] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:59963-20.207.73.82:443"
+}
+[2026-06-04 09:19:34] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:52737"
+}
+[2026-06-04 09:19:34] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:53389"
+}
+[2026-06-04 09:19:34] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:62334"
+}
+[2026-06-04 09:19:34] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:52118"
+}
+[2026-06-04 09:19:34] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::53347"
+}
+[2026-06-04 09:19:34] SYSTEM: {
+  "cpu_percent": 47.1,
+  "memory_percent": 94.2,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:37] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:55272-127.0.0.1:61985"
+}
+[2026-06-04 09:19:37] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:54814"
+}
+[2026-06-04 09:19:37] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::54814"
+}
+[2026-06-04 09:19:37] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:62452-20.42.73.27:443"
+}
+[2026-06-04 09:19:37] SYSTEM: {
+  "cpu_percent": 64.0,
+  "memory_percent": 94.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:40] PROCESS: {
+  "action": "started",
+  "pid": 12716,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:40] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:61740",
+  "remote_address": "172.20.1.78:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:40] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:61739",
+  "remote_address": "192.168.20.100:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:19:40] SYSTEM: {
+  "cpu_percent": 80.4,
+  "memory_percent": 94.1,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:43] PROCESS: {
+  "action": "terminated",
+  "pid": 24856
+}
+[2026-06-04 09:19:43] PROCESS: {
+  "action": "terminated",
+  "pid": 12716
+}
+[2026-06-04 09:19:43] PROCESS: {
+  "action": "terminated",
+  "pid": 19656
+}
+[2026-06-04 09:19:43] SYSTEM: {
+  "cpu_percent": 85.6,
+  "memory_percent": 93.2,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:46] PROCESS: {
+  "action": "terminated",
+  "pid": 12340
+}
+[2026-06-04 09:19:46] SYSTEM: {
+  "cpu_percent": 74.1,
+  "memory_percent": 93.1,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:49] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:61493-20.42.73.31:443"
+}
+[2026-06-04 09:19:49] SYSTEM: {
+  "cpu_percent": 80.2,
+  "memory_percent": 93.2,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:50] SECURITY_ALERT: {
+  "action": "ai_threat_detected",
+  "risk_score": 65,
+  "triggers": [
+    "bank",
+    "confidential"
+  ],
+  "recommendation": "BLOCK",
+  "content_preview": "confidential bank details"
+}
+[2026-06-04 09:19:52] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:56360-2001:4860:4802:38::223:443"
+}
+[2026-06-04 09:19:52] SYSTEM: {
+  "cpu_percent": 80.2,
+  "memory_percent": 93.3,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:55] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:56361-2001:4860:4802:38::223:443"
+}
+[2026-06-04 09:19:55] SYSTEM: {
+  "cpu_percent": 76.7,
+  "memory_percent": 93.0,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:19:58] PROCESS: {
+  "action": "started",
+  "pid": 6620,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:19:59] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:63662-2001:4860:4802:36::223:443"
+}
+[2026-06-04 09:19:59] SYSTEM: {
+  "cpu_percent": 78.9,
+  "memory_percent": 93.1,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:02] PROCESS: {
+  "action": "terminated",
+  "pid": 6620
+}
+[2026-06-04 09:20:02] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:61740-172.20.1.78:7680"
+}
+[2026-06-04 09:20:02] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:61739-192.168.20.100:7680"
+}
+[2026-06-04 09:20:02] SYSTEM: {
+  "cpu_percent": 75.0,
+  "memory_percent": 93.0,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:05] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:53658-2606:4700:8d92:e632:f4ca:0:6811:180e:443"
+}
+[2026-06-04 09:20:05] SYSTEM: {
+  "cpu_percent": 84.3,
+  "memory_percent": 93.2,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:08] SYSTEM: {
+  "cpu_percent": 68.7,
+  "memory_percent": 93.2,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:11] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:50717",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 6860,
+  "process_name": "steamwebhelper.exe"
+}
+[2026-06-04 09:20:11] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:50718",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 6860,
+  "process_name": "steamwebhelper.exe"
+}
+[2026-06-04 09:20:11] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:5050-127.0.0.1:55473"
+}
+[2026-06-04 09:20:11] SYSTEM: {
+  "cpu_percent": 90.4,
+  "memory_percent": 92.4,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:14] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:61741",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:20:14] SYSTEM: {
+  "cpu_percent": 46.3,
+  "memory_percent": 92.2,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:61744",
+  "remote_address": "2001:4860:4802:32::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:61746",
+  "remote_address": "2404:6800:4000:1006::84:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:61743",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:53251",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::58613",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:61742",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:61745",
+  "remote_address": "2001:4860:4802:32::223:443",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:61747",
+  "remote_address": "13.107.5.93:443",
+  "status": "ESTABLISHED",
+  "pid": 24124,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::53251",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:58613",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 2156,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:50717"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:50718"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::57842"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:56896-52.182.141.63:443"
+}
+[2026-06-04 09:20:17] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:57842"
+}
+[2026-06-04 09:20:17] SYSTEM: {
+  "cpu_percent": 32.3,
+  "memory_percent": 92.6,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:61749",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:20:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:61754",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 10920,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:20:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:61752",
+  "remote_address": "192.168.20.100:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:20:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "10.227.22.28:61753",
+  "remote_address": "10.10.56.181:7680",
+  "status": "SYN_SENT",
+  "pid": 20972,
+  "process_name": "svchost.exe"
+}
+[2026-06-04 09:20:20] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:61748",
+  "remote_address": "2001:4860:4802:36::223:443",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:20:20] SYSTEM: {
+  "cpu_percent": 25.3,
+  "memory_percent": 92.2,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:23] SYSTEM: {
+  "cpu_percent": 22.4,
+  "memory_percent": 91.9,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:26] PROCESS: {
+  "action": "started",
+  "pid": 2796,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:20:26] PROCESS: {
+  "action": "started",
+  "pid": 3304,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:20:26] PROCESS: {
+  "action": "started",
+  "pid": 13488,
+  "name": "conhost.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:20:26] PROCESS: {
+  "action": "started",
+  "pid": 25904,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:20:26] PROCESS: {
+  "action": "started",
+  "pid": 26564,
+  "name": "git.exe",
+  "username": "IDK\\unmuk"
+}
+[2026-06-04 09:20:26] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:54868-72.153.5.136:443"
+}
+[2026-06-04 09:20:26] SYSTEM: {
+  "cpu_percent": 30.9,
+  "memory_percent": 92.0,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:29] PROCESS: {
+  "action": "terminated",
+  "pid": 26564
+}
+[2026-06-04 09:20:29] PROCESS: {
+  "action": "terminated",
+  "pid": 3304
+}
+[2026-06-04 09:20:29] PROCESS: {
+  "action": "terminated",
+  "pid": 2796
+}
+[2026-06-04 09:20:29] PROCESS: {
+  "action": "terminated",
+  "pid": 13488
+}
+[2026-06-04 09:20:29] PROCESS: {
+  "action": "terminated",
+  "pid": 25904
+}
+[2026-06-04 09:20:29] NETWORK: {
+  "action": "connection_established",
+  "local_address": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:61755",
+  "remote_address": "2603:1063:10:118::365:7ea3:443",
+  "status": "ESTABLISHED",
+  "pid": 5424,
+  "process_name": "MpDefenderCoreService.exe"
+}
+[2026-06-04 09:20:29] SYSTEM: {
+  "cpu_percent": 28.6,
+  "memory_percent": 92.0,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:32] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:59153"
+}
+[2026-06-04 09:20:32] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::59153"
+}
+[2026-06-04 09:20:32] SYSTEM: {
+  "cpu_percent": 28.1,
+  "memory_percent": 92.3,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:35] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:61758",
+  "remote_address": "20.207.73.82:443",
+  "status": "TIME_WAIT",
+  "pid": 0,
+  "process_name": "N/A"
+}
+[2026-06-04 09:20:35] SYSTEM: {
+  "cpu_percent": 32.9,
+  "memory_percent": 92.5,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:38] SYSTEM: {
+  "cpu_percent": 27.8,
+  "memory_percent": 92.4,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:41] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:53324",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:20:41] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::53324",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 17060,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:20:41] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:61752-192.168.20.100:7680"
+}
+[2026-06-04 09:20:41] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "10.227.22.28:61753-10.10.56.181:7680"
+}
+[2026-06-04 09:20:41] SYSTEM: {
+  "cpu_percent": 46.3,
+  "memory_percent": 92.1,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:44] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:61760",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:20:44] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61759",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:20:44] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61760",
+  "remote_address": "127.0.0.1:61985",
+  "status": "ESTABLISHED",
+  "pid": 11352,
+  "process_name": "language_server_windows_x64.exe"
+}
+[2026-06-04 09:20:44] NETWORK: {
+  "action": "connection_established",
+  "local_address": "127.0.0.1:61985",
+  "remote_address": "127.0.0.1:61759",
+  "status": "ESTABLISHED",
+  "pid": 22832,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:20:44] SYSTEM: {
+  "cpu_percent": 32.6,
+  "memory_percent": 92.3,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:47] NETWORK: {
+  "action": "connection_established",
+  "local_address": "172.16.0.2:62031",
+  "remote_address": "13.69.116.104:443",
+  "status": "ESTABLISHED",
+  "pid": 24556,
+  "process_name": "Antigravity IDE.exe"
+}
+[2026-06-04 09:20:47] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::58613"
+}
+[2026-06-04 09:20:47] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:58613"
+}
+[2026-06-04 09:20:47] SYSTEM: {
+  "cpu_percent": 40.5,
+  "memory_percent": 92.1,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:50] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "2606:4700:110:8b97:1dc2:fe67:8ccb:d19e:51285-2606:4700:8dd3:9436:47ca:0:6811:cf05:443"
+}
+[2026-06-04 09:20:50] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "127.0.0.1:62673-127.0.0.1:5050"
+}
+[2026-06-04 09:20:50] SYSTEM: {
+  "cpu_percent": 23.1,
+  "memory_percent": 91.8,
+  "disk_percent": 14.7
+}
+[2026-06-04 09:20:53] NETWORK: {
+  "action": "connection_established",
+  "local_address": ":::54711",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:20:53] NETWORK: {
+  "action": "connection_established",
+  "local_address": "0.0.0.0:54711",
+  "remote_address": "N/A",
+  "status": "NONE",
+  "pid": 18236,
+  "process_name": "chrome.exe"
+}
+[2026-06-04 09:20:53] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "0.0.0.0:53251"
+}
+[2026-06-04 09:20:53] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": ":::53251"
+}
+[2026-06-04 09:20:53] NETWORK: {
+  "action": "connection_closed",
+  "connection_id": "172.16.0.2:57217-35.212.67.155:443"
+}
+[2026-06-04 09:20:53] SYSTEM: {
+  "cpu_percent": 28.7,
+  "memory_percent": 92.0,
+  "disk_percent": 14.7
+}

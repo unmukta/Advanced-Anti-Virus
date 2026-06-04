@@ -1,7 +1,7 @@
 # File: test_dlp_setup.py
 import sys
 import os
-sys.path.insert(0, 'C:\DLP-System\dlp_enterprise')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 def test_basic_functionality():
     print('Testing DLP basic functionality...')

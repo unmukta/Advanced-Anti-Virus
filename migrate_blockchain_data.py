@@ -1,10 +1,11 @@
-﻿# File: migrate_blockchain_data.py
+# File: migrate_blockchain_data.py
 import sys
+import os
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 
 # Import your models
-sys.path.insert(0, 'C:\DLP-System\dlp_enterprise')
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from dlp.models import BlockChainAudit
 from dlp.models.database import SQLITE_DB_PATH, POSTGRES_DB_URI
 

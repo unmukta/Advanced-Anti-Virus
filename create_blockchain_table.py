@@ -1,6 +1,7 @@
-﻿# File: create_blockchain_table.py
+# File: create_blockchain_table.py
 import sys
-sys.path.insert(0, 'C:\DLP-System\dlp_enterprise')
+import os
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from dlp.models.database import engine_postgres
 

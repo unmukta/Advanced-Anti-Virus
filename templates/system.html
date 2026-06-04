@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -284,73 +284,81 @@
             });
         }
         
-        function updateCharts() {
-            // Simulate data
-            const cpuUsage = Math.floor(Math.random() * 100);
-            const memoryUsage = Math.floor(Math.random() * 100);
-            const diskUsed = Math.floor(Math.random() * 100);
-            const diskFree = 100 - diskUsed;
-            const networkReceived = Math.floor(Math.random() * 1000);
-            const networkSent = Math.floor(Math.random() * 500);
-            
-            // Update CPU Chart
-            cpuChart.data.datasets[0].data.push(cpuUsage);
-            if (cpuChart.data.datasets[0].data.length > 20) {
-                cpuChart.data.datasets[0].data.shift();
+        async function updateSystemData() {
+            try {
+                const response = await fetch('/api/system/metrics');
+                if (!response.ok) throw new Error('API failed');
+                const data = await response.json();
+                
+                // Update CPU Chart
+                cpuChart.data.datasets[0].data.push(data.cpu_usage);
+                if (cpuChart.data.datasets[0].data.length > 20) {
+                    cpuChart.data.datasets[0].data.shift();
+                }
+                cpuChart.update();
+                
+                // Update Memory Chart
+                memoryChart.data.datasets[0].data.push(data.memory_usage);
+                if (memoryChart.data.datasets[0].data.length > 20) {
+                    memoryChart.data.datasets[0].data.shift();
+                }
+                memoryChart.update();
+                
+                // Update Disk Chart
+                diskChart.data.datasets[0].data = [data.disk_usage, 100 - data.disk_usage];
+                diskChart.update();
+                
+                // Update Network Chart
+                const netSentKb = data.network_sent_mb * 1024;
+                const netRecvKb = data.network_recv_mb * 1024;
+                networkChart.data.datasets[0].data.push(netRecvKb);
+                networkChart.data.datasets[1].data.push(netSentKb);
+                
+                if (networkChart.data.datasets[0].data.length > 20) {
+                    networkChart.data.datasets[0].data.shift();
+                    networkChart.data.datasets[1].data.shift();
+                }
+                networkChart.update();
+                
+                // Update Process Table
+                updateProcessTable(data.top_processes);
+            } catch (error) {
+                console.error('Error fetching metrics:', error);
             }
-            cpuChart.update();
-            
-            // Update Memory Chart
-            memoryChart.data.datasets[0].data.push(memoryUsage);
-            if (memoryChart.data.datasets[0].data.length > 20) {
-                memoryChart.data.datasets[0].data.shift();
-            }
-            memoryChart.update();
-            
-            // Update Disk Chart
-            diskChart.data.datasets[0].data = [diskUsed, diskFree];
-            diskChart.update();
-            
-            // Update Network Chart
-            networkChart.data.datasets[0].data.push(networkReceived);
-            networkChart.data.datasets[1].data.push(networkSent);
-            
-            if (networkChart.data.datasets[0].data.length > 20) {
-                networkChart.data.datasets[0].data.shift();
-                networkChart.data.datasets[1].data.shift();
-            }
-            networkChart.update();
         }
         
-        function updateSystemInfo() {
-            // Simulate system information
-            document.getElementById('info-hostname').textContent = 'DLP-SERVER';
-            document.getElementById('info-os').textContent = 'Windows Server 2022';
-            document.getElementById('info-cpu').textContent = 'Intel Xeon E-2378G @ 3.20GHz (8 cores)';
-            document.getElementById('info-ram').textContent = '32.0 GB';
+        async function updateSystemInfo() {
+            try {
+                const response = await fetch('/api/system/info');
+                if (!response.ok) throw new Error('API failed');
+                const data = await response.json();
+                document.getElementById('info-hostname').textContent = data.hostname;
+                document.getElementById('info-os').textContent = data.os;
+                document.getElementById('info-cpu').textContent = data.cpu;
+                document.getElementById('info-ram').textContent = data.ram;
+            } catch (error) {
+                console.error('Error fetching system info:', error);
+            }
         }
         
-        function updateProcessTable() {
-            const processes = [
-                { pid: 1234, name: 'System', cpu: 2.5, memory: 15.2, status: 'Running' },
-                { pid: 5678, name: 'svchost.exe', cpu: 1.2, memory: 8.7, status: 'Running' },
-                { pid: 9012, name: 'chrome.exe', cpu: 12.8, memory: 25.3, status: 'Running' },
-                { pid: 3456, name: 'python.exe', cpu: 5.3, memory: 12.1, status: 'Running' },
-                { pid: 7890, name: 'sqlservr.exe', cpu: 3.7, memory: 18.9, status: 'Running' }
-            ];
-            
+        function updateProcessTable(processes) {
             const tableBody = document.getElementById('processes-table').querySelector('tbody');
             tableBody.innerHTML = '';
             
+            if (!processes || processes.length === 0) {
+                tableBody.innerHTML = '<tr><td colspan="5" class="text-center">No running processes monitored</td></tr>';
+                return;
+            }
+            
             processes.forEach(process => {
                 const row = document.createElement('tr');
-                row.innerHTML = \
-                    <td>\</td>
-                    <td>\</td>
-                    <td>\%</td>
-                    <td>\%</td>
-                    <td><span class="badge bg-success">\</span></td>
-                \;
+                row.innerHTML = `
+                    <td>${process.pid}</td>
+                    <td>${process.name}</td>
+                    <td>${process.cpu_percent.toFixed(1)}%</td>
+                    <td>${process.memory_percent.toFixed(1)}%</td>
+                    <td><span class="badge bg-success">Running</span></td>
+                `;
                 tableBody.appendChild(row);
             });
         }
@@ -360,13 +368,10 @@
             console.log('System page initialized');
             initializeCharts();
             updateSystemInfo();
-            updateProcessTable();
+            updateSystemData();
             
-            // Update charts every 2 seconds
-            setInterval(updateCharts, 2000);
-            
-            // Update process table every 5 seconds
-            setInterval(updateProcessTable, 5000);
+            // Update stats every 2 seconds (which updates charts and process table)
+            setInterval(updateSystemData, 2000);
         });
     </script>
 </body>

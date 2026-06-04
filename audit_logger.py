@@ -1,4 +1,4 @@
-﻿import psutil
+import psutil
 import time
 import json
 from datetime import datetime
@@ -39,7 +39,7 @@ class AuditLogger:
         """Log an event with timestamp and details"""
         try:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            log_entry = f"[{timestamp}] {event_type.upper()}: {json.dumps(event_data, indent=2)}\n"
+            log_entry = f"[{timestamp}] {event_type.upper()}: {json.dumps(event_data)}\n"
             
             # Append to current log file
             with open(self.current_log_file, 'a') as f:
@@ -176,6 +176,17 @@ class AuditLogger:
         })
         
         print("Audit logger monitoring stopped")
+
+    def clear_current_logs(self):
+        """Clear all entries in the current log file"""
+        try:
+            with open(self.current_log_file, 'w') as f:
+                f.write(f"DLP Enterprise Audit Log - Started at {datetime.now().isoformat()}\n")
+                f.write("=" * 80 + "\n\n")
+            return True
+        except Exception as e:
+            print(f"Error clearing logs: {e}")
+            return False
 
 # Create a global instance
 audit_logger = AuditLogger()

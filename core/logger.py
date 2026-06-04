@@ -1,4 +1,4 @@
-﻿import logging
+import logging
 import json
 from datetime import datetime
 from pathlib import Path
@@ -8,8 +8,9 @@ import time
 
 class ComprehensiveLogger:
     def __init__(self):
-        self.log_dir = Path("C:/DLP-System/dlp_enterprise/logs")
-        self.log_dir.mkdir(exist_ok=True)
+        import os
+        self.log_dir = Path(os.getenv("DLP_LOG_DIR", "./logs"))
+        self.log_dir.mkdir(parents=True, exist_ok=True)
         
         # Set up comprehensive logging
         logging.basicConfig(
