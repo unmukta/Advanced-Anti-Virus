@@ -13,7 +13,6 @@ All monitoring data and scanning operations are run **strictly locally** on your
 - **🌐 Network Shield**: Real-time network throughput chart and an integrated active network scanner (supporting Quick, Comprehensive, and Stealth scans).
 - **🧠 AI Threat Filter**: Security playground showcasing AI policy scanning logic for potential threat signatures.
 - **📋 Audit Console**: Local audit logging tracking process launches, terminations, network connections, and system starts.
-- **💎 Premium Design**: Sleek dark-mode glassmorphic interface inspired by modern cyber-operations platforms.
 
 ---
 
